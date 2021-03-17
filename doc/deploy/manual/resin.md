@@ -13,6 +13,6 @@ agent.jar在启动的过程中需要在iast目录中释放配置文件，所以�
 
 2.打开`conf/cluster-default.xml`文件，定位到`<server-default>`所在的行，
 
-3.在该行下面插入`<jvm-arg>-javaagent:/opt/Resin/iast/agent.jar=token=<iast-token></jvm-arg>`
+3.在该行下面插入`<jvm-arg>-javaagent:/opt/Resin/iast/agent.jar</jvm-arg>`
 
 4.重启Resin

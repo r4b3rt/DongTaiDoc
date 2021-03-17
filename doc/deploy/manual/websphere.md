@@ -19,7 +19,7 @@ agent.jar在启动的过程中需要在iast目录中释放动态库和配置文�
 
 ![jvmarg.png](../../assets/deploy/websphere/jvmarg.png)
 
-找到`Generic JVM arguments`选项，开始编辑并在里面填写以下内容并保存`-javaagent:/opt/IBM/WebSphere/AppServer/iast/agent.jar=token=<iast-token>`
+找到`Generic JVM arguments`选项，开始编辑并在里面填写以下内容并保存`-javaagent:/opt/IBM/WebSphere/AppServer/iast/agent.jar`
 
 重启对应修改后的server应用
 

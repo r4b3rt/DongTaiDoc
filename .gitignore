@@ -123,3 +123,10 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+peformence/*
+
+# macos
+.DS_Store
+docker
+peformence

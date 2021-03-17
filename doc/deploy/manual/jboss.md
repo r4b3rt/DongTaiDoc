@@ -11,7 +11,7 @@ agent.jar在启动的过程中需要在iast目录中释放配置文件，所以�
 ##### 2.部署
 进入JBoss容器的主目录，在`bin/run.sh`文件中找到`# Setup JBoss specific properties`所在行，在该行的下面插入如下行：
 
-`JAVA_OPTS="$JAVA_OPTS "-javaagent:/opt/jboss/iast/agent.jar=token=<iast-token>`
+`JAVA_OPTS="$JAVA_OPTS "-javaagent:/opt/jboss/iast/agent.jar`
 其中，token为火线IAST页面中的Agent Token。
 
 > JBossAS 7、JBossWildfly
@@ -28,7 +28,7 @@ agent.jar在启动的过程中需要在iast目录中释放配置文件，所以�
 **Standalone模式**
 打开`bin/standalone.sh`文件，定位`# Display our environment`所在的行，在其上方插入自定义配置，如下：
 
-`JAVA_OPTS="$JAVA_OPTS "-javaagent:/opt/jboss/iast/agent.jar=token=<iast-token>`
+`JAVA_OPTS="$JAVA_OPTS "-javaagent:/opt/jboss/iast/agent.jar`
 
 其中，token为火线IAST页面中的Agent Token。
 

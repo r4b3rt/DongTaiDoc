@@ -1,8 +1,8 @@
-![logo](https://huoxian.secnium.cn/static/img/lingzhi.f96744eb.png)
+![logo](https://www.huoxian.cn/static/img/logo.2fbf251b.png)
 
-# 灵芝IAST <small>v 0.1</small>
+# 洞态IAST <small>v 1.0</small>
 
-> 一款专为甲方安全人员、代码审计工程师和0 Day漏洞挖掘者量身打造的辅助工具
+> 一款专为甲方安全人员、甲乙代码审计工程师和0 Day漏洞挖掘人员量身打造的辅助工具，可用于集成devops环境进行漏洞检测、作为代码审计的辅助工具和自动化挖掘0 Day。
 
 [GitHub](https://github.com/huoxianclub/LingZhi)
 [Document](doc/tutorial/intro.md)

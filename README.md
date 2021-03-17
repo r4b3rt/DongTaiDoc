@@ -10,28 +10,11 @@
 
 
 ## 二、🚀 灵芝极速体验
-- 第一步：获取`IAST-TOKEN`
-- 第二步：部署AGENT并启动WEB应用
 
-#### 获取IAST-TOKEN
-##### 1.注册成为火线白帽
-访问[火线官网](https://www.huoxian.club/#/index)进行注册
-
-##### 2.访问火器获取
-登录火线后，访问“火器-灵芝IAST”，点击“下载安装灵芝”即可看到“IAST Token”
-
-![get_iast_token](doc/assets/tutorial/get_iast_token.gif)
-
-#### 部署AGENT
-方式1：没有Java环境，想试试，那就访问[【火器】“灵芝IAST”交互式应用安全测试工具使用姿势](https://mp.weixin.qq.com/s/VRZE5eRfjGK66yyTK4UkbA) 查看快速使用姿势吧
-
-方式2：有环境，有WEB应用，可以前往release下载agent.jar，然后配置`IAST-Token`使用
-
+快速开始请查看[官方文档](https://huoxianclub.github.io/LingZhi/#/doc/tutorial/quickstart)
 
 
 ## 三、检测能力
-
-#### 社区版安全风险检测能力
 
 - [x] 命令执行
 - [x] SQL注入，支持常见数据库的sql注入检测，包括mysql、mssql等
@@ -52,15 +35,12 @@
 - [x] 弱随机数算法
 - [x] 信任边界
 - [x] Cookie未设置secure
-
-#### 社区版安全风险待补充的列表
-
-- [ ] 反射注入
-- [ ] 第三方组件收集及漏洞检测
-
+- [x] 反射注入
+- [x] 第三方组件收集及漏洞检测
 
 
 ## 四、问答区
+
 #### 1.火线平台地址是什么？
 
 https://www.huoxian.club/#/index

@@ -11,6 +11,5 @@ agent.jar在启动的过程中需要在iast目录中释放配置文件，所以�
 
 2.在`bin/catalina.sh`文件中定位到`elif [ "$1" = "run" ]; then`所在行
 
-3.在该行的下面插入一行，内容如下：`JAVA_OPTS="$JAVA_OPTS "-javaagent:/opt/tomcat/iast/agent.jar=token=<iast-token>`
+3.在该行的下面插入一行，内容如下：`JAVA_OPTS="$JAVA_OPTS "-javaagent:/opt/tomcat/iast/agent.jar`
 
-> iast-token从火线平台的灵芝IAST中获取

@@ -9,7 +9,7 @@ agent.jar在启动的过程中需要在iast目录中释放配置文件，所以�
 
 ##### 2.部署Agent
 
-进入`WebLogic`目录，打开`bin/startWebLogic.sh`文件，找到`JAVA_OPTIONS="${SAVE_JAVA_OPTIONS}"`所在行，在该行的下面增加一行`JAVA_OPTIONS="-javaagent:/u01/oracle/weblogic/user_projects/iast/agent.jar=token=<iast-token>"`
+进入`WebLogic`目录，打开`bin/startWebLogic.sh`文件，找到`JAVA_OPTIONS="${SAVE_JAVA_OPTIONS}"`所在行，在该行的下面增加一行`JAVA_OPTIONS="-javaagent:/u01/oracle/weblogic/user_projects/iast/agent.jar"`
 
 > 集群模式
 
@@ -21,7 +21,7 @@ agent.jar在启动的过程中需要在iast目录中释放配置文件，所以�
 
 ![adminserver.png](../../assets/deploy/weblogic/adminserver.png)
 
-2.进入服务器详情，点击“服务器启动”，在下方的参数一栏中填入javaagent的参数`-javaagent:/u01/oracle/weblogic/user_projects/iast/agent.jar=token=<iast-token>`，如
+2.进入服务器详情，点击“服务器启动”，在下方的参数一栏中填入javaagent的参数`-javaagent:/u01/oracle/weblogic/user_projects/iast/agent.jar`，如
 
 ![adminserver.png](../../assets/deploy/weblogic/boot.png)
 
@@ -39,4 +39,4 @@ agent.jar在启动的过程中需要在iast目录中释放配置文件，所以�
 
 ##### 部署Agent
 找到`/u01/oracle/weblogic/user_projects/domains/base_domain/config`目录下的`config.xml`文件，定位到`<server-start>`标签下的`<arguments>`标签，在标签内添加如下配置：
-`-javaagent:/u01/oracle/weblogic/user_projects/iast/agent.jar=token=<iast-token>`
+`-javaagent:/u01/oracle/weblogic/user_projects/iast/agent.jar`

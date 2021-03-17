@@ -10,4 +10,4 @@ agent.jar在启动的过程中需要在iast目录中释放配置文件，所以�
 
 ##### 2.部署Agent
 
-配置启动参数`java -javaagent:/opt/web/iast/agent.jar -jar XXX.jar`
+配置启动参数`java -javaagent:/opt/web/iast/agent.jar -jar app.jar`

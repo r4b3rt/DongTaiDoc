@@ -4,9 +4,7 @@
 |  ----  | ----  |
 | 命令执行/路径穿越/OGNL代码执行 | owef/iast-demo01:v3 |
 
-靶场将逐步完善，欢迎表哥提供优秀的Java靶场地址，靶场通过审核后，表弟将为表哥奉上查克拉。
-
-#### iast-demo01快速接入
+#### iast-demo01快速安装
 1.安装并启动docker
 
 2.拉取最新的容器：`docker pull owef/iast-demo01:v3`
@@ -17,3 +15,13 @@
 - [命令执行](http://localhost:8080/iast-test01/cmd.jsp?cmd=id)
 - [OGNL代码执行](http://localhost:8080/iast-test01/ognl.jsp?exp=T(java.lang.Runtime).getRuntime().exec(%27whoami%27))
 - [SQL注入](http://localhost:8080/iast-test01/sql.jsp?page=1&page_size=10)
+
+#### Vulhub靶场快速安装灵芝IAST
+对于Vulhub靶场，其使用docker-compose进行管理，为了方便社区用户方便，直接对docker-compose进行封装，生成`vulhub-cli`工具，方便社区用户直接使用灵芝IAST。
+```shel
+$ pip install vulhub-cli
+
+$ vulhub-cli remote start --app fastjson/1.2.24-rce --plugin lingzhi
+
+$ vulhub-cli remote stop --app fastjson/1.2.24-rce --plugin lingzhi
+```
