@@ -1,4 +1,4 @@
-> 为了快速体验IAST的漏洞检测效果，我们与vulhub进行链接，推出vulhub-cli功能，方便进行vulhub靶场的快速部署和IAST的快速体验
+> "火线平台"与vulhub项目联合推出vulhub-cli工具，简化vulhub靶场的部署，可快速体验“火线～洞态IAST”
 
 #### Vulhub靶场快速安装“火线～洞态IAST”
 
