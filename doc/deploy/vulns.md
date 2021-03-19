@@ -9,16 +9,18 @@
 
 2.拉取最新的容器：`docker pull owef/iast-demo01:v3`
 
-3.启动容器：`docker run -itd -p 8080:8080 --name iast-demo01 owef/iast-demo01:v3`
+3.访问[洞态IAST-部署页面](http://aws.iast.huoxian.cn:8000/)下载Java版本agent
 
-4.访问靶场地址：
+4.启动容器：`docker run -itd -p 8080:8080 -e JAVA_TOOL_OPTIONS=-javaagent:/tmp/agent.jar -v ./agent.jar:/tmp/agent.jar --name iast-demo01 owef/iast-demo01:v3`
+
+5.访问靶场地址：
 - [命令执行](http://localhost:8080/iast-test01/cmd.jsp?cmd=id)
 - [OGNL代码执行](http://localhost:8080/iast-test01/ognl.jsp?exp=T(java.lang.Runtime).getRuntime().exec(%27whoami%27))
 - [SQL注入](http://localhost:8080/iast-test01/sql.jsp?page=1&page_size=10)
 
-#### Vulhub靶场快速安装灵芝IAST
+#### Vulhub靶场快速安装“火线～洞态IAST”
 
-对于Vulhub靶场，其使用docker-compose进行管理，为了方便社区用户方便，直接对docker-compose进行封装，生成`vulhub-cli`工具，方便社区用户直接使用灵芝IAST。
+对于Vulhub靶场，其使用docker-compose进行管理，为了方便社区用户方便，直接对docker-compose进行封装，生成`vulhub-cli`工具，方便社区用户直接使用“火线～洞态IAST”。
 
 [vulhub-cli官方文档](https://github.com/huoxianclub/vulhub-compose)
 

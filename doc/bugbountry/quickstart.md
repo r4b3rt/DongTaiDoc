@@ -1,6 +1,6 @@
 > 快速开始
 
-灵芝IAST提供github中流行Java项目的污点链，可以直接搜索sink点进行漏洞发现，下面以**Spring Security OAuth2 远程命令执行漏洞（CVE-2016-4977）**为例，介绍如何直接使用IAST检出该漏洞。
+“火线～洞态IAST” 提供github中流行Java项目的污点链，可以直接搜索sink点进行漏洞发现，下面以**Spring Security OAuth2 远程命令执行漏洞（CVE-2016-4977）**为例，介绍如何直接使用IAST检出该漏洞。
 
 ### 代码审计挖掘0 Day的条件
 - 应用环境
