@@ -1,9 +1,9 @@
 > 灵芝IAST升级为”火线～洞态IAST“，同时，提供独立的SaaS版本，支持第三方组件管理、通用漏洞检测、越权漏洞检测、组件级漏洞挖掘
 
-洞态IAST SaaS版本地址：[http://aws.iast.huoxian.cn:8000/login](http://aws.iast.huoxian.cn:8000/login)
+洞态IAST SaaS版本地址：[http://iast.huoxian.cn:8000/login](http://iast.huoxian.cn:8000/login)
 
 #### 一、下载Agent
-- 登陆[IAST平台](http://aws.iast.huoxian.cn:8000/login)
+- 登陆[IAST平台](http://iast.huoxian.cn:8000/login)
 - 访问“部署IAST”功能
 - 选择目标应用使用的**开发语言**(Java、PHP、Python、.Net等)
 - 选择对应的操作系统和版本（JDK 1.8及以下选择1.8，JDK 1.8以上选择1.9）

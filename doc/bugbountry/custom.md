@@ -4,7 +4,7 @@
 
 > HOOK点语法
 
-自定义规则：http://aws.iast.huoxian.cn:8000/setting/hookRule
+自定义规则：http://iast.huoxian.cn:8000/setting/hookRule
 
 规则分类：
 - 污点源方法规则（source方法）：检测从http请求中读取数据，规则内置在agent中，默认不需要配置
