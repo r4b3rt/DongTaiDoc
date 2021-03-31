@@ -4,7 +4,7 @@
 
 对于Vulhub靶场，其使用docker-compose进行管理，为了方便社区用户方便，直接对docker-compose进行封装，生成`vulhub-cli`工具，方便社区用户直接使用“火线～洞态IAST”。
 
-[vulhub-cli官方文档](https://github.com/huoxianclub/vulhub-compose)
+[vulhub-cli官方文档](https://github.com/hxsecurity/vulhub-compose)
 
 ```shel
 # 安装vulhub-cli

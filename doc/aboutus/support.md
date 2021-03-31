@@ -1,5 +1,5 @@
 #### Github issues
-- https://github.com/huoxianclub/LingZhi/issues
+- https://github.com/hxsecurity/DongTaiDoc/issues
 
 #### 微信技术讨论群（推荐）
 添加个人微信并备注"洞态IAST-加群"，工作人员将拉您进群

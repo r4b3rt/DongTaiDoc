@@ -11,7 +11,7 @@
 
 ## 二、🚀 火线～洞态IAST极速体验
 
-快速开始请查看[官方文档](https://huoxianclub.github.io/LingZhi/#/doc/tutorial/quickstart)
+快速开始请查看[官方文档](https://hxsecurity.github.io/DongTaiDoc/#/doc/tutorial/quickstart)
 
 
 ## 三、检测能力
@@ -81,7 +81,7 @@ IAST与框架本身无关，理论上只要在节点上都安装agent就可以�
 
 
 ## 六、讨论区
-1.Github issue: https://github.com/huoxianclub/LingZhi/issues
+1.Github issue: https://github.com/hxsecurity/DongTaiDoc/issues
 
 2.微信群：需要邀请码或想进群交流的表哥们，请扫描二维码加🔥表弟的个人微信，表弟会把大家拉进技术交流群
 
