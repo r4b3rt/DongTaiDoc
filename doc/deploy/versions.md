@@ -12,7 +12,7 @@ SaaS版本地址：[http://aws.iast.huoxian.cn:8000/](http://aws.iast.huoxian.cn
 
 
 ### 架构图
-![lingzhi-架构图](../../doc/assets/deploy/framework.png)
+![DongTai-架构图](../../doc/assets/deploy/framework.png)
 
 
 ### 开源版本涉及项目
@@ -21,13 +21,13 @@ SaaS版本地址：[http://aws.iast.huoxian.cn:8000/](http://aws.iast.huoxian.cn
 
 **基础服务**
 
-- lingzhi-agent-java，java版本的agent代码实现，用于从Java应用系统中采集数据
-- lingzhi-web，IAST产品的前端项目
-- lingzhi-webapi，IAST产品的api接口，主要用于与`lingzhi-web`项目交互
-- lingzhi-agent-server，IAST产品的agent端api接口，用于与不同语言agent的数据交互
-- lingzhi-engine，IAST产品的漏洞检测引擎，污点调用图梳理、污点链搜索、漏洞检测等功能均在该项目中实现
+- DongTai-agent-java，java版本的agent代码实现，用于从Java应用系统中采集数据
+- DongTai-web，IAST产品的前端项目
+- DongTai-webapi，IAST产品的api接口，主要用于与`DongTai-web`项目交互
+- DongTai-agent-server，IAST产品的agent端api接口，用于与不同语言agent的数据交互
+- DongTai-engine，IAST产品的漏洞检测引擎，污点调用图梳理、污点链搜索、漏洞检测等功能均在该项目中实现
 
-基础服务存在依赖关系，请依次部署`lingzhi-agent-server`、`lingzhi-engine`、`lingzhi-webapi`、`lingzhi-web`
+基础服务存在依赖关系，请依次部署`DongTai-agent-server`、`DongTai-engine`、`DongTai-webapi`、`DongTai-web`
 
 #### 基于Docker部署洞态IAST
 
@@ -45,7 +45,7 @@ SaaS版本地址：[http://aws.iast.huoxian.cn:8000/](http://aws.iast.huoxian.cn
 - 创建数据库`iast-webapi`，选择数据库引擎`innodb`
 - 导入webapi的数据库脚本，脚本联系[技术支持](/doc/aboutus/support)索要
 
-**3. lingzhi-engine服务部署**
+**3. DongTai-engine服务部署**
 
 创建本地配置文件，例如：/tmp/config.ini
 <details>
@@ -68,11 +68,11 @@ db = 0
 </codes></pre>
 </details>
 
-拉取docker镜像：`docker pull huoxian/lingzhi-engine`
+拉取docker镜像：`docker pull huoxian/dongtai-engine`
 
-启动docker镜像：`docker run -d --name lingzhi-engine -p 8081:8000 --restart=always -v /tmp/config.ini:/opt/iast/engine/conf/config.ini huoxian/lingzhi-engine`
+启动docker镜像：`docker run -d --name dongtai-engine -p 8081:8000 --restart=always -v /tmp/config.ini:/opt/iast/engine/conf/config.ini huoxian/dongtai-engine`
 
-**4. lingzhi-agent-server服务部署**
+**4. DongTai-agent-server服务部署**
 
 创建本地配置文件，例如：/tmp/config.ini
 <details>
@@ -98,11 +98,11 @@ url = http://127.0.0.1:8081
 </codes></pre>
 </details>
 
-拉取docker镜像：`docker pull huoxian/lingzhi-apiserver`
+拉取docker镜像：`docker pull huoxian/dongtai-apiserver`
 
-启动docker容器：`docker run -d --name lingzhi-apiserver -p 8082:8000 --restart=always -v /tmp/config.ini:/opt/iast/apiserver/conf/config.ini huoxian/lingzhi-apiserver`
+启动docker容器：`docker run -d --name dongtai-apiserver -p 8082:8000 --restart=always -v /tmp/config.ini:/opt/iast/apiserver/conf/config.ini huoxian/dongtai-apiserver`
 
-**5. lingzhi-webapi服务部署**
+**5. DongTai-webapi服务部署**
 
 创建本地配置文件，例如：/tmp/config.ini
 <details>
@@ -131,14 +131,14 @@ url = http://127.0.0.1:8082
 </codes></pre>
 </details>
 
-拉取docker镜像：`docker pull huoxian/lingzhi-webapi`
+拉取docker镜像：`docker pull huoxian/dongtai-webapi`
 
-创建并启动docker容器：`docker run -d --name lingzhi-webapi -p 8082:8000 --restart=always -v /tmp/config.ini:/opt/iast/webapi/conf/config.ini huoxian/lingzhi-webapi`
+创建并启动docker容器：`docker run -d --name dongtai-webapi -p 8082:8000 --restart=always -v /tmp/config.ini:/opt/iast/webapi/conf/config.ini huoxian/dongtai-webapi`
 
 
-**6. lingzhi-web服务部署**
+**6. DongTai-web服务部署**
 
-使用`nginx.conf`文件的内容创建nginx配置文件`/opt/lingzhi/nginx.conf`，修改其中的**http://lingzhi-api-svc:80**为**lingzhi-webapi**服务的地址
+使用`nginx.conf`文件的内容创建nginx配置文件`/opt/dongtai/nginx.conf`，修改其中的**http://dongtai-api-svc:80**为**DongTai-webapi**服务的地址
 
 <details>
     <summary>点击查看<code>nginx.conf</code>文件内容</summary>
@@ -176,11 +176,11 @@ url = http://127.0.0.1:8082
 
            location /api/ {
              proxy_read_timeout 60;
-             proxy_pass http://lingzhi-api-svc:80/api/;
+             proxy_pass http://dongtai-api-svc:80/api/;
            }
 
            location /upload/ {
-             proxy_pass http://lingzhi-api-svc:80/upload/;
+             proxy_pass http://dongtai-api-svc:80/upload/;
            }
 
          location = /50x.html {
@@ -192,9 +192,9 @@ url = http://127.0.0.1:8082
 </codes></pre>
 </details>
 
-拉取docker镜像：`docker pull huoxian/lingzhi-web`
+拉取docker镜像：`docker pull huoxian/dongtai-web`
 
-创建并启动docker容器：`docker run -d --name lingzhi-web -p 80:80 --restart=always -v /opt/lingzhi/nginx.conf:/etc/nginx/nginx.conf huoxian/lingzhi-web`
+创建并启动docker容器：`docker run -d --name dongtai-web -p 80:80 --restart=always -v /opt/dongtai/nginx.conf:/etc/nginx/nginx.conf huoxian/dongtai-web`
 
 
 #### 申请条件

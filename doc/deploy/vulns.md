@@ -11,13 +11,13 @@
 $ pip install vulhub-cli
 
 # 使用vulhub-cli启动靶场环境并安装公共洞态IAST（漏洞数据所有人可见）
-$ vulhub-cli remote start --app solr/ssrf_path --plugin lingzhi
+$ vulhub-cli remote start --app solr/ssrf_path --plugin dongtai
 
 # 使用vulhub-cli启动靶场环境并安装个人洞态IAST（漏洞数据仅个人可见）
-$ vulhub-cli remote start --app fastjson/1.2.24-rce --plugin lingzhi --plugin-args "token=<lingzhi iast token>"
+$ vulhub-cli remote start --app fastjson/1.2.24-rce --plugin dongtai --plugin-args "token=<dongtai iast token>"
 
 # 使用vulhub-cli停止并销毁靶场
-$ vulhub-cli remote stop --app fastjson/1.2.24-rce --plugin lingzhi
+$ vulhub-cli remote stop --app fastjson/1.2.24-rce --plugin dongtai
 ```
 
 “火线～洞态IAST”的agent与vulhub中的apache solr靶场的JDK存在兼容问题，暂时无法安装agent，可自行前往`apache solr`官网下载部署或联系[技术支持](/doc/aboutus/support)获取。
