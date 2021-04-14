@@ -37,4 +37,4 @@ JAVA_OPTS="$JAVA_OPTS "-javaagent:/opt/jboss/iast/agent.jar" "-Dproject.name=<pr
 
 **domain模式**
 
-当前版本为社区版本，不建议在domain模式下安装Agent。
+当前版本为社区版本，不建议在domain模式下安装Agent
