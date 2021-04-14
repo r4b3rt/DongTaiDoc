@@ -90,13 +90,19 @@
 ![get_iast_token](../../doc/assets/tutorial/download_agent.gif)
 
 #### 2、配置agent并启动应用（以SpringBoot为例）
-SpringBoot默认打为`jar`包，通过`java -jar app.jar`的方式启动；在这类SpringBoot上安装agent时，只需要在启动命令上增加一个参数即可：`java -javaagent:/path/to/agent.jar -jar app.jar`
+SpringBoot默认打为`jar`包，通过`java -jar app.jar`的方式启动；在这类SpringBoot上安装agent时，只需要在启动命令上增加一个参数即可：
+
+```shell
+java -javaagent:/path/to/agent.jar -Dproject.name=<project name> -jar app.jar
+```
+注意：`-Dproject.name=<project name>` 为可选参数，`<project name>`与创建的项目名称保持一致，agent将自动关联至项目；如果不配置该参数，需要进入项目管理中进行手工绑定。
+
 
 应用启动后，可以在**系统配置**内**引擎管理**页面看到刚上线的agent
 
 ![agent_list](../../doc/assets/tutorial/agent_list.png)
 
-#### 3、创建项目
+#### 3、创建项目(若使用 -Dproject.name=<project name> 参数的话则跳过此步骤)
 进入**项目配置**页面，创建项目并绑定第二步中注册的agent
 
 ![create project](../../doc/assets/tutorial/create_project.gif)
