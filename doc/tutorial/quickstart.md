@@ -98,14 +98,17 @@ java -javaagent:/path/to/agent.jar -Dproject.name=<project name> -jar app.jar
 注意：`-Dproject.name=<project name>` 为可选参数，`<project name>`与创建的项目名称保持一致，agent将自动关联至项目；如果不配置该参数，需要进入项目管理中进行手工绑定。
 
 
-应用启动后，可以在**系统配置**内**引擎管理**页面看到刚上线的agent
+应用启动后，可以在**系统配置**内**引擎管理**页面看到刚上线的agent，若没有指定`-Dproject.name=<project name>`，项目名称默认为`Demo Project`。
 
-![agent_list](../../doc/assets/tutorial/agent_list.png)
+![agent_system_manage](../../doc/assets/tutorial/agent_system_manage.png)
 
-#### 3、创建项目(若使用 -Dproject.name=<project name> 参数的话则跳过此步骤)
-进入**项目配置**页面，创建项目并绑定第二步中注册的agent
+#### 3、创建项目
 
-![create project](../../doc/assets/tutorial/create_project.gif)
+进入**项目配置**页面，若使用`-Dproject.name=<project name>`参数，agent会自动关联至此。若要关联其他agent，可在设置中自主配置。
+
+![project_new_auto](../../doc/assets/tutorial/project_new_auto.png)
+
+![project_edit_auto](../../doc/assets/tutorial/project_edit_auto.png)
 
 #### 4、检测漏洞
 项目创建完成后，即可正常访问应用，触发API检测漏洞；检测到的漏洞可以在**项目详情**页面中看到，也可以在**应用漏洞**页面看到。
@@ -113,4 +116,3 @@ java -javaagent:/path/to/agent.jar -Dproject.name=<project name> -jar app.jar
 ![project vul](../../doc/assets/tutorial/project_vul.png)
 
 ![project vul list](../../doc/assets/tutorial/project_vul_list.png)
-
