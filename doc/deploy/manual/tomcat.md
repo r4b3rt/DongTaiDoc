@@ -1,15 +1,19 @@
 ### 手动安装-Linux
 
 ##### 1.安装Agent.jar
-从git的release处下载agent.jar文件，然后在Tomcat的安装目录中创建文件夹iast，如`/opt/tomcat/iast`，复制下载的agent.jar文件到创建的iast目录中
 
-agent.jar在启动的过程中需要在iast目录中释放配置文件，所以需要在Linux下修改iast目录的权限，e.g: `chmod 777 -R /opt/tomcat/iast`
+登陆 [IAST平台](http://iast.huoxian.cn:8000/login) 在**部署IAST**中下载洞态IAST的Agent，将agent.jar文件放入WEB服务器（中间件）所在机器上，保证agent.jar文件所在目录具有可写权限，如：`/tmp/`
 
 ##### 2.部署Agent
 
 1.进入`tomcat`所在目录
 
-2.在`bin/catalina.sh`文件中定位到`elif [ "$1" = "run" ]; then`所在行
+2.在 `tomcat/bin` 目录下编辑 `catalina.sh` 文件，加入参数：
+```shell
+CATALINA_OPTS=-javaagent:/path/to/server/agent.jar" "-Dproject.name=<project name>
+```
 
-3.在该行的下面插入一行，内容如下：`JAVA_OPTS="$JAVA_OPTS "-javaagent:/opt/tomcat/iast/agent.jar`
+![tomact_config_catalina.png](../../../doc/assets/deploy/manual/tomcat_config_catalina.png)
+
+- 注意：`-Dproject.name=<project name>` 为可选参数，`<project name>`与创建的项目名称保持一致，agent将自动关联至项目；如果不配置该参数，需要进入项目管理中进行手工绑定。
 

@@ -2,12 +2,19 @@
 
 #### 手动安装
 
-##### 1.安装Agent.jar
+##### 1.安装 Agent
 
-从git的release处下载agent.jar文件，然后在Spring Boot的安装目录中创建文件夹iast，如`/opt/web/iast/`，复制下载的agent.jar文件到创建的iast目录中
+登陆 [IAST平台](http://iast.huoxian.cn:8000/login) 在**部署IAST**中下载洞态IAST的Agent，将agent.jar文件放入WEB服务器（中间件）所在机器上，保证agent.jar文件所在目录具有可写权限，如：`/tmp/`
 
-agent.jar在启动的过程中需要在iast目录中释放配置文件，所以需要在Linux下修改iast目录的权限，e.g: `chmod 777 -R /opt/web/iast/`
+##### 2.配置 Agent
 
-##### 2.部署Agent
 
-配置启动参数`java -javaagent:/opt/web/iast/agent.jar -jar app.jar`
+- 如果使用war包的方式部署，agent的安装方式为具体中间件的安装方式
+  
+- 如果使用`java -jar app.jar`的方式部署，则在启动命令中增加启动参数`-javaagent:/path/to/agent.jar`即可，如：
+```shell
+java -javaagent:/path/to/agent.jar -Dproject.name=<project name> -jar app.jar
+```
+
+- 注意：`-Dproject.name=<project name>` 为可选参数，`<project name>`与创建的项目名称保持一致，agent将自动关联至项目；如果不配置该参数，需要进入项目管理中进行手工绑定。
+
