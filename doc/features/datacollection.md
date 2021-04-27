@@ -143,7 +143,7 @@
 
 **如图**
 
-![method_flow_chart](../../doc/assets/features/method_flow_chart.png)
+![method_flow_chart](../../doc/assets/features/method_flow_charts.png)
 
 **策略**
 
