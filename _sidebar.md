@@ -4,12 +4,13 @@
   - [快速开始](doc/tutorial/quickstart.md)
     
   - [IAST产品介绍](doc/tutorial/versions.md)
+
+  - [检测方法介绍](doc/tutorial/method.md)
+
+  - [检测能力](doc/tutorial/detects.md)
     
   - [兼容性说明](doc/tutorial/compat.md)
     
-  - [检测能力](doc/tutorial/detects.md)
-    
-  - [Agent 端采集数据](doc/tutorial/datacollection.md)
   
 - 漏洞挖掘教程
   - [入门](doc/bugbountry/quickstart.md)
