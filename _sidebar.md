@@ -17,12 +17,13 @@
   - [部署靶场环境](doc/deploy/vulns.md)
 - 功能说明
   - [检测能力](doc/features/detects.md)
+  - [洞态 IAST Agent 端数据收集说明](doc/features/datacollection.md)
 - 漏洞挖掘教程
   - [入门](doc/bugbountry/quickstart.md)
   - [高级教程](doc/bugbountry/custom.md)
   - [自动化漏洞挖掘/检测](doc/bugbountry/flag.md)
-- 版本变更
-  - [版本变更](doc/changes/changelog.md)
+- 更新日志
+  - [更新日志](doc/changes/changelog.md)
 - 贡献榜
   - [贡献榜](doc/contributions.md)
 - 关于我们
