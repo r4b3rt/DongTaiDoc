@@ -22,7 +22,7 @@ JAVA_OPTS="$JAVA_OPTS "-javaagent:/opt/jboss/iast/agent.jar" "-Dproject.name=<pr
 
 1.找到“环境”下的“服务器”，然后在服务器列表中点击需要安装agent的服务器，如：AdminServer
 
-![adminserver.png](../../assets/deploy/weblogic/adminserver.png)
+![adminserver.png](../assets/deploy/weblogic/adminserver.png)
 
 2.进入服务器详情，点击“服务器启动”，在下方的参数一栏中填入javaagent的参数
 ```shell
@@ -31,11 +31,11 @@ JAVA_OPTS="$JAVA_OPTS "-javaagent:/opt/jboss/iast/agent.jar" "-Dproject.name=<pr
 注意，`-Dproject.name=<project name>` 为可选参数，`<project name>`与创建的项目名称保持一致，agent将自动关联至项目；如果不配置该参数，需要进入项目管理中进行手工绑定。
 
 
-![adminserver.png](../../assets/deploy/weblogic/boot.png)
+![adminserver.png](../assets/deploy/weblogic/boot.png)
 
 3.重启服务器，使配置生效
 
-![adminserver.png](../../assets/deploy/weblogic/restart.png)
+![adminserver.png](../assets/deploy/weblogic/restart.png)
 
 #### 方式二、通过修改weblogic的config.xml文件
 

@@ -12,7 +12,7 @@ SaaS版本地址：[http://iast.huoxian.cn:8000/](http://iast.huoxian.cn:8000/)
 
 
 ### 架构图
-![DongTai-架构图](../../doc/assets/deploy/framework.png)
+![DongTai-架构图](../assets/deploy/framework.png)
 
 
 ### 开源版本涉及项目

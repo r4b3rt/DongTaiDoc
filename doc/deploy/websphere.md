@@ -7,15 +7,15 @@
 #### 2.配置WebSphere服务器
 进入WebSphere WEB端的管理后台，在控制台左侧的导航栏里，选择`Servers -> Server Types -> WebSphere Application Server`，进入应用列表界面：
 
-![app.png](../../assets/deploy/websphere/app.png)
+![app.png](../assets/deploy/websphere/app.png)
 
 选择需要安装agent的应用（以server1为例），点击进入管理页面。在新页面向下翻，找到`Server Infrastructure -> Process definition`，并点击进入：
 
-![server1.png](../../assets/deploy/websphere/server1.png)
+![server1.png](../assets/deploy/websphere/server1.png)
 
 点击`Additional Properties -> Java Virtual Machine`进入JVM启动参数编辑界面
 
-![jvmarg.png](../../assets/deploy/websphere/jvmarg.png)
+![jvmarg.png](../assets/deploy/websphere/jvmarg.png)
 
 找到`Generic JVM arguments`选项，开始编辑并在里面填写以下内容并保存`-javaagent:/path/to/agent.jar -Dproject.name=<project name>`
 

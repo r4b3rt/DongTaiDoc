@@ -13,7 +13,7 @@
 CATALINA_OPTS=-javaagent:/path/to/server/agent.jar" "-Dproject.name=<project name>
 ```
 
-![tomact_config_catalina.png](../../../doc/assets/deploy/manual/tomcat_config_catalina.png)
+![tomact_config_catalina.png](../assets/deploy/manual/tomcat_config_catalina.png)
 
 - 注意：`-Dproject.name=<project name>` 为可选参数，`<project name>`与创建的项目名称保持一致，agent将自动关联至项目；如果不配置该参数，需要进入项目管理中进行手工绑定。
 
