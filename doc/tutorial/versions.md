@@ -50,22 +50,21 @@ SaaS版本地址：[http://iast.huoxian.cn:8000/](http://iast.huoxian.cn:8000/)
 创建本地配置文件，例如：/tmp/config.ini
 <details>
     <summary>点击查看<code>config.ini</code>文件内容</summary>
-<pre><codes>
-
+<pre>
+<codes>
 [mysql]
 host = localhost
 port = 3306
 name = iast_webapi
 user = root
 password = password
-
 [redis]
 host = host
 port = 6379
 password = password
 db = 0
-
-</codes></pre>
+</codes>
+</pre>
 </details>
 
 拉取docker镜像：`docker pull huoxian/dongtai-engine`
@@ -77,8 +76,8 @@ db = 0
 创建本地配置文件，例如：/tmp/config.ini
 <details>
     <summary>点击查看<code>config.ini</code>文件内容</summary>
-<pre><codes>
-
+<pre>
+<codes>
 [mysql]
 host = localhost
 port = 3306
@@ -94,8 +93,9 @@ db = 0
 
 [engine]
 url = http://127.0.0.1:8081
+</codes>
 
-</codes></pre>
+</pre>
 </details>
 
 拉取docker镜像：`docker pull huoxian/dongtai-apiserver`
