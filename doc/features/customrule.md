@@ -1,9 +1,9 @@
 ##  IDEA Plugin — DongTai IAST 使用说明
 
-* [配置云端自定义规则](#1)
-* [一键配置本地agent](#2)
+* [配置云端自定义规则](#11111)
+* [一键配置本地agent](#22222)
 
-<h4 id="1">一、配置云端自定义规则</h3>
+<h4 id="11111">一、配置云端自定义规则</h3>
 
 #####  1、IDEA 安装 DongTai IAST {#index}
 
@@ -67,7 +67,7 @@
 
   ![plugin_hook_result](../../doc/assets/features/plugin_hook_result.png)
 
-<h4 id="2">二、一键配置本地agent</h3>
+<h4 id="22222">二、一键配置本地agent</h3>
 
 #####  1、配置"DongTai IAST 配置云端"
 
