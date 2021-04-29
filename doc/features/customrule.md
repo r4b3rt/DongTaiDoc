@@ -1,6 +1,4 @@
-##  自定义规则
-
-###  IDEA Plugin — DongTai IAST 使用说明
+##  IDEA Plugin — DongTai IAST 使用说明
 
 * [配置云端自定义规则](#1)
 * [一键配置本地agent](#2)
