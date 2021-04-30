@@ -6,4 +6,4 @@
 
 - [洞态IAST自动检测S2-007漏洞](https://mp.weixin.qq.com/s/-Pkk9fUG_KwxlRMrhwoUAg)
 
-- [IAST自动检测S2-008漏洞](https://mp.weixin.qq.com/s/GBhnUsKnsqECpTNGos1uXg)
+- [洞态IAST自动检测S2-008漏洞](https://mp.weixin.qq.com/s/GBhnUsKnsqECpTNGos1uXg)
