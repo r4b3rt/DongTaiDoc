@@ -1,6 +1,6 @@
 > 灵芝IAST升级为”火线～洞态IAST“，同时，提供独立的SaaS版本，支持第三方组件管理、通用漏洞检测、越权漏洞检测、组件级漏洞挖掘
 
-洞态IAST SaaS版本地址：[http://iast.huoxian.cn:8000/login](http://iast.huoxian.cn:8000/login)
+洞态IAST SaaS版本地址：[https://iast.huoxian.cn/login](https://iast.huoxian.cn/login)
 
 ### 一、注册登录
 
@@ -16,14 +16,14 @@
 
 #### 2.登录
 
-- 火线-洞态IAST地址：http://iast.huoxian.cn:8000
+- 火线-洞态IAST地址：https://iast.huoxian.cn
   
   ![login_iast](../../doc/assets/tutorial/login_iast.png)
 
 
 #### 3.修改密码
 
-- 登录 [IAST平台](http://iast.huoxian.cn:8000/login) 后，点击系统配置，在左边栏中选择密码修改，即可修改密码
+- 登录 [IAST平台](https://iast.huoxian.cn/login) 后，点击系统配置，在左边栏中选择密码修改，即可修改密码
 
   ![password_change](../../doc/assets/tutorial/password_changes.png)
 
@@ -34,7 +34,7 @@
 
 #### 1.在线靶场配置 IAST token
 
-- 登陆[IAST平台](http://iast.huoxian.cn:8000/login)
+- 登陆[IAST平台](https://iast.huoxian.cn/login)
 - 访问“部署IAST”功能
 - 选择目标应用使用的**开发语言**(Java)
 - 选择对应的操作系统和版本（JDK 1.8及以下选择1.8，JDK 1.8以上选择1.9）
@@ -42,7 +42,7 @@
 
   ![find_token](../../doc/assets/tutorial/find_tokenn.png)
 
-- 登陆[靶场](http://labs.iast.huoxian.cn:8081) ，靶场账号与 IAST 账号相同
+- 登陆[靶场](https://labs.iast.huoxian.cn) ，靶场账号与 IAST 账号相同
 - 点击系统设置，进入token配置页面，粘贴之前复制的token后，点击修改即可保存
 
   ![config_token_setting](../../doc/assets/tutorial/config_token_setting.png)
@@ -60,7 +60,7 @@
 
   ![visit_route](../../doc/assets/tutorial/visit_route.png)
 
-- 项目启动成功后进入[IAST平台](http://iast.huoxian.cn:8000/login) ，可以在系统配置内引擎管理页面看到刚上线的应用
+- 项目启动成功后进入[IAST平台](https://iast.huoxian.cn/login) ，可以在系统配置内引擎管理页面看到刚上线的应用
   
   ![agentManage](../../doc/assets/tutorial/agentManage.png)
 
@@ -81,7 +81,7 @@
 
 ### 三、使用本地应用程序安装 IAST
 #### 1、下载Agent
-- 登陆[IAST平台](http://iast.huoxian.cn:8000/login)
+- 登陆[IAST平台](https://iast.huoxian.cn/login)
 - 访问“部署IAST”功能
 - 选择目标应用使用的**开发语言**(Java)
 - 选择对应的操作系统和版本（JDK 1.8及以下选择1.8，JDK 1.8以上选择1.9）

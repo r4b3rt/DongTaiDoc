@@ -16,7 +16,7 @@
 现在，师傅们只需要专注于代码审计，轻松挖掘漏洞。
 
 ### 漏洞搜索
-**洞态IAST**搜索功能：[http://iast.huoxian.cn:8000/taint/search](http://iast.huoxian.cn:8000/taint/search)
+**洞态IAST**搜索功能：[https://iast.huoxian.cn/taint/search](https://iast.huoxian.cn/taint/search)
 
 1. 指定漏洞触发的sink方法，如：`org.springframework.expression.Expression.getValue`，然后搜索，可以找到存在该sink方法的污点调用链所在的HTTP请求
 ![spring-el](../../doc/assets/bugbountry/search_result.png)

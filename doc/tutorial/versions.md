@@ -8,7 +8,7 @@
 ### 洞态IAST简介
 洞态IAST包含前端项目和后端API，前端项目基于`Vue`、`TypeScript`开发，后端项目基于`Django`、`Django Rest Framework`开发。包括：策略搜索、项目列表、项目详情、新建项目、导出项目漏洞、应用漏洞管理、第三方组件管理、Agent管理、Hook规则管理、用户管理等功能。
 
-SaaS版本地址：[http://iast.huoxian.cn:8000/](http://iast.huoxian.cn:8000/)
+SaaS版本地址：[https://iast.huoxian.cn](https://iast.huoxian.cn)
 
 
 ### 架构图
