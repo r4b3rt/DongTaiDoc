@@ -8,7 +8,7 @@
 进入WebSphere WEB端的管理后台，在控制台左侧的导航栏里，选择`Servers -> Server Types -> WebSphere Application Server`，进入应用列表界面：
 
 ![app.png](../assets/deploy/websphere/app.png)
-
+ 
 选择需要安装agent的应用（以server1为例），点击进入管理页面。在新页面向下翻，找到`Server Infrastructure -> Process definition`，并点击进入：
 
 ![server1.png](../assets/deploy/websphere/server1.png)

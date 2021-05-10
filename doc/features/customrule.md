@@ -63,7 +63,7 @@
 
 #####  5、查看已添加的 HOOK 规则
   
- - 登陆 [IAST平台](https://iast.huoxian.cn/login) ，选择系统配置中的自定义规则。
+ - 登陆 [IAST平台](https://iast.huoxian.cn/login) ，选择系统配置中的自定义规则。 
 
   ![plugin_hook_result](../../doc/assets/features/plugin_hook_result.png)
 

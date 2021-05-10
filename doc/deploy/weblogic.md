@@ -13,7 +13,7 @@ JAVA_OPTS="$JAVA_OPTS "-javaagent:/opt/jboss/iast/agent.jar" "-Dproject.name=<pr
 ```
 注意，`-Dproject.name=<project name>` 为可选参数，`<project name>`与创建的项目名称保持一致，agent将自动关联至项目；如果不配置该参数，需要进入项目管理中进行手工绑定。
 
-
+ 
 > 集群模式
 
 #### 方式一、通过WebLogic的console控制台
