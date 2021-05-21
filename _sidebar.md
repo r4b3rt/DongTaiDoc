@@ -34,3 +34,5 @@
 - [关于开源](doc/opensource/opensource.md)
 
 - [技术支持](doc/aboutus/support.md)
+
+- [Q&A] (doc/qa.md)
