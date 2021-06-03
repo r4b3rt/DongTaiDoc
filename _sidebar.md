@@ -35,4 +35,4 @@
 
 - [技术支持](doc/aboutus/support.md)
 
-- [QA] (doc/qa.md)
+- [Q&A](doc/qa.md)
