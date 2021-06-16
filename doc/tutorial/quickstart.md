@@ -2,33 +2,32 @@
 
 洞态IAST SaaS版本地址：[https://iast.huoxian.cn/login](https://iast.huoxian.cn/login) 
 
-### 一、注册登录
+## 登录IAST平台
 
-#### 1.注册
+### 1.注册
 
 - 填写 [调查问卷](https://wj.qq.com/s2/8269653/6ff2/) 进行注册
-
-  ![register_questionnaire](../../doc/assets/tutorial/register_questionnaire.png)
+  <img src="../../doc/assets/tutorial/register_questionnaire.png" style="height:600px; width:800px;" >  
   
-    **注意**：填写问卷后，请于**次日**进行登陆
-  
-- 提交成功之后生成用户，我们会将用户名和密码发送至您的邮箱。
+  **注意**：账号统一在每天上午10点创建
 
-#### 2.登录
+- 提交成功之后生成用户，我们会将用户名和密码发送至您的邮箱，请注意查收
+
+### 2.登录
 
 - 火线-洞态IAST地址：https://iast.huoxian.cn
   
   ![login_iast](../../doc/assets/tutorial/login_iast.png)
 
 
-#### 3.修改密码
+### 3.修改密码
 
 - 登录 [IAST平台](https://iast.huoxian.cn/login) 后，点击系统配置，在左边栏中选择密码修改，即可修改密码
 
   ![password_change](../../doc/assets/tutorial/password_changes.png)
 
 
-### 二、使用在线靶场快速体验IAST
+## 在线靶场 - 快速体验IAST
 
 目前在线靶场提供了openrasp测试环境、BenchMark测试环境等，可通过在线靶场快速启动云端环境体验 IAST的使用流程，下文以靶场镜像 openrasp的靶场环境为例进行演示。
 
@@ -79,7 +78,7 @@
 ![project_detail](../../doc/assets/tutorial/project_detail.png)
 ![project_detail_list](../../doc/assets/tutorial/project_detail_list.png)
 
-### 三、使用本地应用程序安装 IAST
+## 本地应用 - 安装IAST
 #### 1、下载Agent
 - 登陆[IAST平台](https://iast.huoxian.cn/login)
 - 访问“部署IAST”功能
