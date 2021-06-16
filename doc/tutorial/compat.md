@@ -14,8 +14,8 @@
 - WebLogic 10.3.6 / 12.2
 
 ### JDK 版本
-- Oracle JDK 6~8
-- OpenJDK 6~8
+- Oracle JDK 1.6+
+- OpenJDK 1.6+
 
 ### 数据库
 - MySQL
