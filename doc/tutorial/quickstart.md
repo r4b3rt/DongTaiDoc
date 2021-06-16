@@ -7,12 +7,11 @@
 #### 1.注册
 
 - 填写 [调查问卷](https://wj.qq.com/s2/8269653/6ff2/) 进行注册
+  <img src="../../doc/assets/tutorial/register_questionnaire.png" style="height:600px; width:800px;" >  
+  
+  **注意**：账号统一在每天上午10点创建
 
-  ![register_questionnaire](../../doc/assets/tutorial/register_questionnaire.png)
-  
-    **注意**：填写问卷后，请于**次日**进行登陆
-  
-- 提交成功之后生成用户，我们会将用户名和密码发送至您的邮箱。
+- 提交成功之后生成用户，我们会将用户名和密码发送至您的邮箱，请注意查收
 
 #### 2.登录
 
