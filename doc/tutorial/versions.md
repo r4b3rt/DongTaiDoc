@@ -4,7 +4,7 @@
 洞态IAST包含前端项目和后端API，前端项目基于`Vue`、`TypeScript`开发，后端项目基于`Django`、`Django Rest Framework`开发。包括：策略搜索、项目列表、项目详情、新建项目、导出项目漏洞、应用漏洞管理、第三方组件管理、Agent管理、Hook规则管理、用户管理等功能。
 
 #### 架构图
-<img src="../assets/deploy/framework.png" style="width: 850px;height: 500px;">
+<img src="/DongTaiDoc/doc/assets/deploy/framework.png" style="width: 850px;height: 500px;">
 
 ## 版本
 洞态IAST有两个版本：
