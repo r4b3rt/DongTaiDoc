@@ -7,7 +7,7 @@
 ### 1.注册
 
 - 填写 [调查问卷](https://wj.qq.com/s2/8269653/6ff2/) 进行注册
-  <img src="../../doc/assets/tutorial/register_questionnaire.png" style="height:600px; width:800px;" >  
+  <img src="/DongTaiDoc/doc/assets/tutorial/register_questionnaire.png" style="height:600px; width:800px;" >  
   
   **注意**：账号统一在每天上午10点创建
 
