@@ -4,7 +4,7 @@
 
 ###  1、IDEA 安装 DongTai IAST
 
-- 下载 DongTai IAST 插件安装包，下载地址：
+- 下载 DongTai IAST 插件安装包，[下载地址](https://github.com/HXSecurity/DongTaiDoc/releases/download/v0.4/dongtai-idea-plugin.zip)
 
 - 打开 IDEA 设置，选择从本地安装 IDEA 插件，安装DongTai IAST插件安装包**dongtai-idea-plugin.zip**
   
