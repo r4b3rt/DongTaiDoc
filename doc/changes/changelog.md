@@ -1,8 +1,21 @@
+**2021-06-19 至 2021-07-02 升级日志**
+1. 漏洞验证功能上线，支持：单漏洞验证、项目漏洞批量验证 【需要开启`-Diast.server.mode=local`参数指定local模式才能使用】
+2. POST请求包展示、污点位置及污点值展示【需要开启`-Diast.server.mode=local`参数指定local模式才能使用】
+3. 修复引擎运行状态不会更新的bug
+4. 修复漏洞详情页面中请求数据包不会更新的bug
+5. 修改默认语言为JAVA，解决语言大小写不一致的问题
+6. 漏洞默认状态更改为“待处理”
+7. 优化Java Agent中HTTP请求获取方式，优化内存/CPU占用率，提升性能
+8. 优化Java Agent中使用的第三方组件，减小agent的体积
+9. IDEA插件正式开源
+
+****
+
 **2021-06-07 至 2021-06-18 升级日志**
 
 1. 项目版本功能上线
 2. 云端一键启停功能上线
-3. Agent增加延迟启动功能上线
+3. Agent增加延迟启动功能上线，默认延迟10秒钟，可通过JVM参数: `-Diast.engine.delay.time=600`指定延时10分钟启动
 4. 优化agent中配置文件相关的处理逻辑，降低性能损耗
 5. 部署方案增加：docker-compose一键部署、k8s集群一键部署
 ****
@@ -16,9 +29,9 @@
 
 ***2021-04-19 ~ 2021-04-23 升级日志***
 1. 修改云端数据去重 bug，解决相同靶场，某一用户扫到漏洞后，其他用户检测不到相同漏洞的问题（出现在 openrasp 的靶场中）
-2. 漏洞检测增加模式选择，包括：hunter 模式、normal 模式，hunter 模式下，漏洞检出率提高，误报率提高。hunter 模式的使用场景：代码审计，normal 模式使用场景：企业内部检测漏洞。hunter 模式配置方法：``-Diast.mode=hunter``
-3. 数据上报增加模式选择，包括：local 模式、remote 模式，remote 模式上传污点的 hash，local 模式上传污点的值（可具体的看到污点内容及变化情况）；local 模式使用场景：代码审计、企业本地化部署；默认为 remote 模式，local 模式配置方法：``-Diast.server.mode=local``
-4. agent 支持配置项目，可自动关联至创建的项目，新创建的项目可自动关联已启动的agent。配置方法：``-Dproject.name=<project name>``
+2. 漏洞检测增加模式选择，包括：hunter 模式、normal 模式，hunter 模式下，漏洞检出率提高，误报率提高。hunter 模式的使用场景：代码审计，normal 模式使用场景：企业内部检测漏洞。hunter 模式配置方法：`-Diast.mode=hunter`
+3. 数据上报增加模式选择，包括：local 模式、remote 模式，remote 模式上传污点的 hash，local 模式上传污点的值（可具体的看到污点内容及变化情况）；local 模式使用场景：代码审计、企业本地化部署；默认为 remote 模式，local 模式配置方法：`-Diast.server.mode=local`
+4. agent 支持配置项目，可自动关联至创建的项目，新创建的项目可自动关联已启动的agent。配置方法：`-Dproject.name=<project name>`
 - 用户体验优化
 - 靶场增加已启动靶场的快速定位
 - 新增 hook 规则
