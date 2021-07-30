@@ -33,7 +33,7 @@
 |   来源   | 配置文件                                                     |
 | 可选参数 | hunter｜normal                                               |
 |  默认值  | normal                                                      |
-| 参数说明 | <div style="width: 300pt">漏洞检验模式，hunter模式漏洞多误报率高，normal模式漏洞相对少误报率低 |
+| 参数说明 | <div style="width: 300pt">漏洞检验模式，hunter模式漏洞多、误报率高，normal模式漏洞相对少、误报率低 |
 
 ### iast.server.mode
 
@@ -160,32 +160,38 @@
 
 > 以测试项目 SpringDemo 为例。
 
-### 1. 当需要指定项目名称时：
+### 1. 当需要自定义项目名称为 SpringDemo 时
 
 ```
 java -javaagent:/path/to/agent.jar -Dproject.name=SpringDemo -jar SpringDemo.jar
 ```
 
-### 2. 当需要调试 agent 时
+### 2. 当需要本地调试 agent 或使用本地编译的 agent 时
 
 ```
 java -javaagent:/path/to/agent.jar -Ddebug.name=true -jar SpringDemo.jar
 ```
 
-### 3. 当需要设置 agent 延迟启动时间时
+### 3. 当需要设置 agent 延迟启动时间为15秒时
 
 ```
 java -javaagent:/path/to/agent.jar -Diast.engine.delay.time=15 -jar SpringDemo.jar
 ```
 
-### 4. 当需要查看字节码文件时
+### 4. 当需要在目录/tmp/class查看转换后的字节码文件时
 
 ```
-java -javaagent:/path/to/agent.jar -Diast.dump.class.enable=true -jar SpringDemo.jar
+java -javaagent:/path/to/agent.jar -Diast.dump.class.enable=true -Diast.dump.class.path=/tmp/class -jar SpringDemo.jar
 ```
 
-### 5. 当需要设置HTTP代理时
+### 5. 当需要设置HTTP代理为 10.100.100.1:80 时
 
 ```
-java -javaagent:/path/to/agent.jar -Diast.proxy.enable=true -Diast.proxy.host=127.0.0.1 -Diast.proxy.host=80 -jar SpringDemo.jar
+java -javaagent:/path/to/agent.jar -Diast.proxy.enable=true -Diast.proxy.host=10.100.100.1 -Diast.proxy.host=80 -jar SpringDemo.jar
+```
+
+### 6. 当需要设置检测能力为hunter时
+
+```
+java -javaagent:/path/to/agent.jar -Diast.mode=hunter -jar SpringDemo.jar
 ```
