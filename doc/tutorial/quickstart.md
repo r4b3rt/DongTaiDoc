@@ -7,7 +7,7 @@
 ### 1.注册
 
 - 填写 [调查问卷](https://jinshuju.net/f/I9PNmf) 进行注册
-  <img src="/DongTaiDoc/doc/assets/tutorial/register_questionnaire.png" style="height:600px; width:800px;" >  
+  <img src="/DongTai-Doc/doc/assets/tutorial/register_questionnaire.png" style="height:600px; width:800px;" >  
   
   **注意**：账号统一在每天上午10点创建
 
@@ -16,7 +16,7 @@
 ### 2.登录
 
 - 火线-洞态IAST地址：https://iast.huoxian.cn
-  
+
   ![login_iast](../../doc/assets/tutorial/login_iast.png)
 
 
@@ -27,7 +27,9 @@
   ![password_change](../../doc/assets/tutorial/password_changes.png)
 
 
-## 在线靶场 - 快速体验IAST
+## Java版本快速体验
+
+### 在线靶场 - 快速体验IAST
 
 目前在线靶场提供了openrasp测试环境、BenchMark测试环境等，可通过在线靶场快速启动云端环境体验 IAST的使用流程，下文以靶场镜像 openrasp的靶场环境为例进行演示。
 
@@ -78,7 +80,7 @@
 ![project_detail](../../doc/assets/tutorial/project_detail.png)
 ![project_detail_list](../../doc/assets/tutorial/project_detail_list.png)
 
-## 本地应用 - 安装IAST
+### 本地应用 - 安装IAST
 #### 1、下载Agent
 - 登陆[IAST平台](https://iast.huoxian.cn/login)
 - 访问“部署IAST”功能
@@ -115,3 +117,5 @@ java -javaagent:/path/to/agent.jar -Dproject.name=<project name> -jar app.jar
 ![project vul](../../doc/assets/tutorial/project_vul.png)
 
 ![project vul list](../../doc/assets/tutorial/project_vul_list.png)
+
+## Python版本快速体验
