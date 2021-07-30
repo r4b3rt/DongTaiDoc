@@ -1,10 +1,12 @@
 # 探针参数
 
+## 一、参数表
+
 ### debug
 
 |   属性   | 值                                                           |
 | :------: | :----------------------------------------------------------- |
-| 生效方式 | 重启应用，启动应用时添加“-Ddebug=”                           |
+| 生效方式 | 重启应用，启动应用时添加`-Ddebug=<true or false>`                           |
 | 参数类型 | Boolean                                                      |
 |   来源   | 命令行参数                                                   |
 | 可选参数 | true｜false                                                  |
@@ -15,7 +17,7 @@
 
 |   属性   | 值                                        |
 | :------: | :---------------------------------------- |
-| 生效方式 | 重启应用，启动应用时添加“-Dproject.name=” |
+| 生效方式 | 重启应用，启动应用时添加`-Dproject.name=<Demo>` |
 | 参数类型 | 字符串                                    |
 |   来源   | 配置文件                                  |
 | 可选参数 | 任意字符串                                |
@@ -26,21 +28,21 @@
 
 |   属性   | 值                                                           |
 | :------: | :----------------------------------------------------------- |
-| 生效方式 | 重启应用，启动应用时添加“-Diast.mode=”                       |
+| 生效方式 | <div style="width: 300pt">重启应用，启动应用时添加`-Diast.mode=<hunter or normal>`                       |
 | 参数类型 | 字符串                                                       |
 |   来源   | 配置文件                                                     |
-| 可选参数 | hunter\|normal                                               |
-|  默认值  | normal                                                       |
+| 可选参数 | hunter｜normal                                               |
+|  默认值  | normal                                                      |
 | 参数说明 | <div style="width: 300pt">漏洞检验模式，hunter模式漏洞多误报率高，normal模式漏洞相对少误报率低 |
 
 ### iast.server.mode
 
 |   属性   | 值                                                           |
 | :------: | :----------------------------------------------------------- |
-| 生效方式 | 重启应用，启动应用时添加“-Diast.server.mode=”                |
+| 生效方式 | <div style="width: 300pt">重启应用，启动应用时添加`-Diast.server.mode=<local or remote>`                |
 | 参数类型 | 字符串                                                       |
 |   来源   | 配置文件                                                     |
-| 可选参数 | local\|remote                                                |
+| 可选参数 | local｜remote                                                |
 |  默认值  | remote                                                       |
 | 参数说明 | <div style="width: 300pt">local模式支持单漏洞验证、项目漏洞批量验证、POST请求包展示、污点位置及污点值展示等功能 |
 
@@ -48,10 +50,10 @@
 
 |   属性   | 值                                             |
 | :------: | :--------------------------------------------- |
-| 生效方式 | 重启应用，启动应用时添加“-Diast.proxy.enable=” |
+| 生效方式 | <div style="width: 300pt">重启应用，启动应用时添加`-Diast.proxy.enable=<true or false>` |
 | 参数类型 | Boolean                                        |
 |   来源   | 配置文件                                       |
-| 可选参数 | true\|false                                    |
+| 可选参数 | true｜false                                    |
 |  默认值  | false                                          |
 | 参数说明 | <div style="width: 300pt">HTTP代理模式是否启用                           |
 
@@ -59,7 +61,7 @@
 
 |   属性   | 值                                           |
 | :------: | :------------------------------------------- |
-| 生效方式 | 重启应用，启动应用时添加“-Diast.proxy.host=” |
+| 生效方式 | <div style="width: 300pt">重启应用，启动应用时添加`-Diast.proxy.host=<ip>` |
 | 参数类型 | 字符串                                       |
 |   来源   | 配置文件                                     |
 | 可选参数 |                                              |
@@ -70,7 +72,7 @@
 
 |   属性   | 值                                           |
 | :------: | :------------------------------------------- |
-| 生效方式 | 重启应用，启动应用时添加“-Diast.proxy.port=” |
+| 生效方式 | 重启应用，启动应用时添加`-Diast.proxy.port=<port>` |
 | 参数类型 | 字符串                                       |
 |   来源   | 配置文件                                     |
 | 可选参数 |                                              |
@@ -81,7 +83,7 @@
 
 |   属性   | 值                                                        |
 | :------: | :-------------------------------------------------------- |
-| 生效方式 | 重启应用，启动应用时添加“-Diast.service.report.interval=” |
+| 生效方式 | <div style="width: 300pt">重启应用，启动应用时添加`-Diast.service.report.interval=<60000>` |
 | 参数类型 | 整型数字                                                  |
 |   来源   | 配置文件                                                  |
 | 可选参数 | 任意整型数字                                              |
@@ -92,7 +94,7 @@
 
 |   属性   | 值                                                        |
 | :------: | :-------------------------------------------------------- |
-| 生效方式 | 重启应用，启动应用时添加“-Diast.service.replay.interval=” |
+| 生效方式 | <div style="width: 300pt">重启应用，启动应用时添加`-Diast.service.replay.interval=<300000>` |
 | 参数类型 | 整型数字                                                  |
 |   来源   | 配置文件                                                  |
 | 可选参数 | 任意整型数字                                              |
@@ -103,7 +105,7 @@
 
 |   属性   | 值                                                  |
 | :------: | :-------------------------------------------------- |
-| 生效方式 | 重启应用，启动应用时添加“-Diast.engine.delay.time=” |
+| 生效方式 | 重启应用，启动应用时添加`-Diast.engine.delay.time=<10>` |
 | 参数类型 | 整型数字                                            |
 |   来源   | 配置文件                                            |
 | 可选参数 | 任意整型数字                                        |
@@ -114,10 +116,10 @@
 
 |   属性   | 值                                                  |
 | :------: | :-------------------------------------------------- |
-| 生效方式 | 重启应用，启动应用时添加“-Diast.dump.class.enable=” |
+| 生效方式 | <div style="width: 300pt">重启应用，启动应用时添加`-Diast.dump.class.enable=<true or false>` |
 | 参数类型 | Boolean                                             |
 |   来源   | 配置文件                                            |
-| 可选参数 | true\|false                                         |
+| 可选参数 | true｜false                                         |
 |  默认值  | false                                               |
 | 参数说明 | <div style="width: 300pt">是否 dump 修改后的字节码                            |
 
@@ -132,50 +134,6 @@
 |  默认值  | /tmp/iast-class-dump/ |
 | 参数说明 | <div style="width: 300pt">dump 字节码的路径     |
 
-### iast.name
-
-|   属性   | 值                       |
-| :------: | :----------------------- |
-| 生效方式 | 重启应用                 |
-| 参数类型 | 字符串                   |
-|   来源   | 配置文件                 |
-| 可选参数 | lingzhi-Enterprise 1.0.0 |
-|  默认值  | lingzhi-Enterprise 1.0.0 |
-| 参数说明 | <div style="width: 300pt">iast name                |
-
-### iast.version
-
-|   属性   | 值           |
-| :------: | :----------- |
-| 生效方式 | 重启应用     |
-| 参数类型 | 字符串       |
-|   来源   | 配置文件     |
-| 可选参数 | 1.0.0        |
-|  默认值  | 1.0.0        |
-| 参数说明 | <div style="width: 300pt">iast version |
-
-### iast.response.name
-
-|   属性   | 值                 |
-| :------: | :----------------- |
-| 生效方式 | 重启应用           |
-| 参数类型 | 字符串             |
-|   来源   | 配置文件           |
-| 可选参数 | lingzhi            |
-|  默认值  | lingzhi            |
-| 参数说明 | <div style="width: 300pt">iast response name |
-
-### iast.response.value
-
-|   属性   | 值                 |
-| :------: | :----------------- |
-| 生效方式 | 重启应用           |
-| 参数类型 | 字符串             |
-|   来源   | 配置文件           |
-| 可选参数 | lingzhi            |
-|  默认值  | lingzhi            |
-| 参数说明 | <div style="width: 300pt">iast response name |
-
 ### iast.server.url
 
 |   属性   | 值                                  |
@@ -186,17 +144,6 @@
 | 可选参数 |                                     |
 |  默认值  | http://openapi.iast.huoxian.cn:8000 |
 | 参数说明 | <div style="width: 300pt">server url                          |
-
-### iast.server.token
-
-|   属性   | 值         |
-| :------: | :--------- |
-| 生效方式 | 重启应用   |
-| 参数类型 | 字符串     |
-|   来源   | 配置文件   |
-| 可选参数 |            |
-|  默认值  |            |
-| 参数说明 | <div style="width: 300pt">用户 Token |
 
 ### iast.allhook.enable
 
@@ -209,46 +156,36 @@
 |  默认值  | false    |
 | 参数说明 | <div style="width: 300pt">         |
 
-### app.name
+## 二、用例
 
-|   属性   | 值       |
-| :------: | :------- |
-| 生效方式 | 重启应用 |
-| 参数类型 | 字符串   |
-|   来源   | 配置文件 |
-| 可选参数 |          |
-|  默认值  | LingZhi  |
-| 参数说明 | <div style="width: 300pt">app name |
+> 以测试项目 SpringDemo 为例。
 
-### engine.status
+### 1. 当需要指定项目名称时：
 
-|   属性   | 值       |
-| :------: | :------- |
-| 生效方式 | 重启应用 |
-| 参数类型 | 字符串   |
-|   来源   | 配置文件 |
-| 可选参数 |          |
-|  默认值  |          |
-| 参数说明 | <div style="width: 300pt">引擎状态 |
+```
+java -javaagent:/path/to/agent.jar -Dproject.name=SpringDemo -jar SpringDemo.jar
+```
 
-### engine.name
+### 2. 当需要调试 agent 时
 
-|   属性   | 值       |
-| :------: | :------- |
-| 生效方式 | 重启应用 |
-| 参数类型 | 字符串   |
-|   来源   | 配置文件 |
-| 可选参数 |          |
-|  默认值  |          |
-| 参数说明 | <div style="width: 300pt">引擎名称 |
+```
+java -javaagent:/path/to/agent.jar -Ddebug.name=true -jar SpringDemo.jar
+```
 
-### jdk.version
+### 3. 当需要设置 agent 延迟启动时间时
 
-|   属性   | 值       |
-| :------: | :------- |
-| 生效方式 | 重启应用 |
-| 参数类型 | 字符串   |
-|   来源   | 配置文件 |
-| 可选参数 |          |
-|  默认值  |          |
-| 参数说明 | <div style="width: 300pt">jdk版本  |
+```
+java -javaagent:/path/to/agent.jar -Diast.engine.delay.time=15 -jar SpringDemo.jar
+```
+
+### 4. 当需要查看字节码文件时
+
+```
+java -javaagent:/path/to/agent.jar -Diast.dump.class.enable=true -jar SpringDemo.jar
+```
+
+### 5. 当需要设置HTTP代理时
+
+```
+java -javaagent:/path/to/agent.jar -Diast.proxy.enable=true -Diast.proxy.host=127.0.0.1 -Diast.proxy.host=80 -jar SpringDemo.jar
+```
