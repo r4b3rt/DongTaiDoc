@@ -10,9 +10,10 @@
   - [Java](doc/deploy/java.md)
   - [Python](doc/deploy/python.md)
 
-- [安装部署](doc/deploy/intro.md)
-  - [docker-compose](doc/deploy/docker-compose.md)
-  - [Kubernetes](doc/deploy/Kubernetes.md)
+- 安装部署
+  - [DongTai服务架构](doc/deploy/intro.md)
+  - [单机部署](doc/deploy/docker-compose.md)
+  - [集群部署](doc/deploy/Kubernetes.md)
 
 - [最佳实践](doc/practices.md)
 
@@ -21,10 +22,12 @@
   - [进阶](doc/bugbountry/custom.md)
   - [案例](doc/bugbountry/example.md)
 
-- [Release Note](doc/changes/changelog.md)
+- Release Note
+  - [Release Note](doc/changes/changelog.md)
   - [Java Agent Release Note](doc/changes/JavaAgent.md)
   - [Python Agent Release Note](doc/changes/PythonAgent.md)
 
-- [Q&A](doc/qa.md)
+- [Q&A]
+  - [QA] (doc/qa.md)
 
 - [技术支持](doc/aboutus/support.md)

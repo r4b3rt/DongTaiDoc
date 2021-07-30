@@ -1,0 +1,2 @@
+- [x] [docker-compose一键部署](https://github.com/HXSecurity/DongTai/tree/main/deploy/docker-compose)
+- [x] [源码一键部署](https://github.com/HXSecurity/DongTai#%E4%B8%80%E9%94%AE%E6%BA%90%E7%A0%81%E9%83%A8%E7%BD%B2docker%E7%8E%AF%E5%A2%83)
