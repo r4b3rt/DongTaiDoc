@@ -28,6 +28,6 @@
   - [Python Agent Release Note](doc/changes/PythonAgent.md)
 
 - [Q&A]
-  - [QA] (doc/qa.md)
+  - [QA](doc/qa.md)
 
 - [技术支持](doc/aboutus/support.md)
