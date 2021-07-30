@@ -160,38 +160,38 @@
 
 > 以测试项目 SpringDemo 为例。
 
-### 1. 当需要自定义项目名称为 SpringDemo 时
+### 1. 当需要将应用绑定到云端项目 SpringDemo 时：
 
 ```
 java -javaagent:/path/to/agent.jar -Dproject.name=SpringDemo -jar SpringDemo.jar
 ```
 
-### 2. 当需要本地调试 agent 或使用本地编译的 agent 时
+### 2. 当需要排查 agent 报错问题或者二次开发 agent 时需要本地调试：
 
 ```
 java -javaagent:/path/to/agent.jar -Ddebug.name=true -jar SpringDemo.jar
 ```
 
-### 3. 当需要设置 agent 延迟启动时间为15秒时
+### 3. 当启动 agent 影响了应用的运行，需要设置 agent 延迟启动时间，以15秒为例：
 
 ```
 java -javaagent:/path/to/agent.jar -Diast.engine.delay.time=15 -jar SpringDemo.jar
 ```
 
-### 4. 当需要在目录/tmp/class查看转换后的字节码文件时
+### 4. 当排查 agent 异常或者研究字节码转换原理时，在目录/tmp/class查看转换后的字节码文件：
 
 ```
 java -javaagent:/path/to/agent.jar -Diast.dump.class.enable=true -Diast.dump.class.path=/tmp/class -jar SpringDemo.jar
 ```
 
-### 5. 当需要设置HTTP代理为 10.100.100.1:80 时
+### 5. 当前网络无法访问洞态云端需要设置HTTP代理，以设置代理 10.100.100.1:80 为例：
 
 ```
 java -javaagent:/path/to/agent.jar -Diast.proxy.enable=true -Diast.proxy.host=10.100.100.1 -Diast.proxy.host=80 -jar SpringDemo.jar
 ```
 
-### 6. 当需要设置检测能力为hunter时
+### 6. 当需要设置检测能力为 hunter/normal 时（hunter 模式的使用场景：代码审计，normal 模式使用场景：企业内部检测漏洞）：
 
 ```
-java -javaagent:/path/to/agent.jar -Diast.mode=hunter -jar SpringDemo.jar
+java -javaagent:/path/to/agent.jar -Diast.mode=hunter/normal -jar SpringDemo.jar
 ```
