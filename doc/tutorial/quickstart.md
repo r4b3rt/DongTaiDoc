@@ -137,12 +137,12 @@ SpringBoot默认打为`jar`包，通过`java -jar app.jar`的方式启动；在�
 #### 2、配置agent并启动应用（以Django为例）
    修改待检测的Django项目中的settings.py, 在configure middleware位置，增加一条
 
-     ```shell
-       MIDDLEWARE = [ 
-          'dongtai_agent_python.middlewares.django_middleware.FireMiddleware',
-          #...
-         ]
-     ```
+ ```shell
+   MIDDLEWARE = [ 
+      'dongtai_agent_python.middlewares.django_middleware.FireMiddleware',
+      #...
+     ]
+ ```
 
 注意，`curl url&projectName=<Demo Project>` 为可更改参数，`<projectName>`与创建的项目名称保持一致，agent将自动关联至项目；
 若下载时未配置`<projectName>`，可配置系统环境变量projectName，重启项目，同样生效，系统环境变量`<projectName>`优先级高于下载时配置的`<projectName>`。
