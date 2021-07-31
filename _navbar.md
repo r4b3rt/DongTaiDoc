@@ -1,3 +1,3 @@
 - Translations
   - [:cn: 中文](/)
-  - [:uk: English](/en-us/)
+  - [:uk: English](/en-us/doc/tutorial/intro)
