@@ -46,7 +46,6 @@
 
   ![config_token_setting](../assets/tutorial/config_token_setting.png)
 
-
 #### 2.下载靶场镜像（以镜像 openrasp1-3-6 为例）
 
 - 以镜像 openrasp1-3-6 为例，点击镜像管理，在对应镜像后点击下载，弹出提示框，开始下载靶场
@@ -99,7 +98,6 @@ SpringBoot默认打为`jar`包，通过`java -jar app.jar`的方式启动；在�
 
 注意：`-Dproject.name=<project name>` 为可选参数，`<project name>`与创建的项目名称保持一致，agent将自动关联至项目；如果不配置该参数，需要进入项目管理中进行手工绑定。
 
-
 应用启动后，可以在**系统配置**内**引擎管理**页面看到刚上线的agent，若没有指定`-Dproject.name=<project name>`，项目名称默认为`Demo Project`。
 
   ![agent_system_manage.png](../assets/tutorial/agent_system_manage.png)
@@ -143,7 +141,7 @@ SpringBoot默认打为`jar`包，通过`java -jar app.jar`的方式启动；在�
       #...
      ]
     ```
-
+    
 注意，`curl url&projectName=<Demo Project>` 为可更改参数，`<projectName>`与创建的项目名称保持一致，agent将自动关联至项目；
 若下载时未配置`<projectName>`，可配置系统环境变量projectName，重启项目，同样生效，系统环境变量`<projectName>`优先级高于下载时配置的`<projectName>`；
 如果不配置该参数，需要进入项目管理中进行手工绑定。

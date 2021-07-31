@@ -88,3 +88,4 @@
 - 在插件中实时查看漏洞信息
 
   ![plugin_taint_details](../assets/features/plugin_taint_details.png)
+

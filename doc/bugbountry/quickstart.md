@@ -19,11 +19,13 @@
 **洞态IAST**搜索功能：[https://iast.huoxian.cn/taint/search](https://iast.huoxian.cn/taint/search)
  
 1. 指定漏洞触发的sink方法，如：`org.springframework.expression.Expression.getValue`，然后搜索，可以找到存在该sink方法的污点调用链所在的HTTP请求
+
 ![spring-el](../assets/bugbountry/search_result.png)
 
 2. 找到相关的HTTP请求后，根据`agent`的名称判断当前HTTP属于哪个开源项目，这里搜索的HTTP请求分别来自vulapps的`spring-webflow`靶场和vulfocus的`cve-2016-4977`靶场
 
 3. 查看**污点调用链**的详情及**HTTP请求**的详细内容
+
 ![taint_link_detail](../assets/bugbountry/taint_link_detail.png)
 
 然后根据节点的提示，找到**污点**传播的具体流程及每一个方法的上层调用，可用于快速验证和复现漏洞是否存在其他限制。

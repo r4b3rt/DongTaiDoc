@@ -22,8 +22,6 @@
 
 ![interface demo](../assets/bugbountry/interface_demo.png)
 
-
-
 ### N Day漏洞无法检测问题排查
 如果发现历史N Day的漏洞无法检测到，可以联系[技术支持](/doc/aboutus/support)寻求帮助，或者调试历史漏洞，进行研究。
 
