@@ -75,9 +75,9 @@
 #### 4、检测漏洞
 项目创建完成后，即可正常访问应用，触发API检测漏洞；检测到的漏洞可以在**项目详情**页面中看到，也可以在**应用漏洞**页面看到。
 
-  <img src="../assets/tutorial/project_detail.png" style="height:600px; width:800px;" >
+  ![project_detail.png](../assets/tutorial/project_detail.png)
 
-  <img src="../assets/tutorial/project_detail_list.png" style="height:600px; width:800px;" >
+  ![project_detail_list.png](../assets/tutorial/project_detail_list.png)
 
 ### 本地应用 - 安装IAST
 #### 1、下载Agent
@@ -87,7 +87,7 @@
 - 选择对应的操作系统和版本（JDK 1.8及以下选择1.8，JDK 1.8以上选择1.9）
 - 进入下载、配置页面，根据步骤完成下载和配置
 
-  <img src="../assets/tutorial/download_agent.gif" style="height:600px; width:800px;" >
+  ![download_agent.gif](../assets/tutorial/download_agent.gif)
 
 #### 2、配置agent并启动应用（以SpringBoot为例）
 SpringBoot默认打为`jar`包，通过`java -jar app.jar`的方式启动；在这类SpringBoot上安装agent时，只需要在启动命令上增加一个参数即可：
@@ -156,7 +156,7 @@ SpringBoot默认打为`jar`包，通过`java -jar app.jar`的方式启动；在�
 
   ![python_project_new_auto.png](../assets/tutorial/python_project_new_auto.png)
 
-  ![python_project_edit_auto.png](./assets/tutorial/python_project_edit_auto.png)
+  ![python_project_edit_auto.png](../assets/tutorial/python_project_edit_auto.png)
 
 #### 4、检测漏洞
 项目创建完成后，即可正常访问应用，触发API检测漏洞；检测到的漏洞可以在**项目详情**页面中看到，也可以在**应用漏洞**页面看到。
