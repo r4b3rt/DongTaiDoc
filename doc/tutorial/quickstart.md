@@ -118,3 +118,50 @@ SpringBoot默认打为`jar`包，通过`java -jar app.jar`的方式启动；在�
   <img src="/DongTai-Doc/doc/assets/tutorial/project_vul_list.png" style="height:600px; width:800px;" >
 
 ## Python版本快速体验
+
+### 靶场应用 - 快速体验IAST
+
+目前靶场应用提供了Django-python-agent测试环境，可通过靶场快速体验 IAST的使用流程。
+下载地址:[python_range_demo](https://github.com/jinghao1/python_range_demo)
+
+### 本地应用 - 安装IAST
+#### 1、下载Agent
+- 登陆[IAST平台](https://iast.huoxian.cn/login)
+- 访问“部署IAST”功能
+- 选择目标应用使用的**开发语言**(Python)
+- 进入下载、配置页面，根据步骤完成下载和配置
+
+  <img src="/DongTai-Doc/doc/assets/tutorial/python_download_agent.png" style="height:600px; width:800px;" >
+  
+
+#### 2、配置agent并启动应用（以Django为例）
+    修改待检测的Django项目中的settings.py, 在configure middleware位置，增加一条
+    ```shell
+     MIDDLEWARE = [ 
+      'dongtai_agent_python.middlewares.django_middleware.FireMiddleware',
+      #...
+     ]
+    ```
+
+注意，`curl url&projectName=<Demo Project>` 为可更改参数，`<projectName>`与创建的项目名称保持一致，agent将自动关联至项目；
+若下载时未配置`<projectName>`，可配置系统环境变量projectName，重启项目，同样生效，系统环境变量`<projectName>`优先级高于下载时配置的`<projectName>`；
+如果不配置该参数，需要进入项目管理中进行手工绑定。
+
+应用启动后，可以在**系统配置**内**引擎管理**页面看到刚上线的agent，若没有配置`<projectName>`，项目名称默认为`Demo Project`。
+
+  <img src="/DongTai-Doc/doc/assets/tutorial/agent_system_manage.png" style="height:600px; width:800px;" >
+
+#### 3、创建项目
+
+进入**项目配置**页面，若使用`projectName=<Demo Project>`参数，agent会自动关联至此。若要关联其他agent，可在设置中自主配置。
+
+  <img src="/DongTai-Doc/doc/assets/tutorial/python_project_new_auto.png" style="height:600px; width:800px;" >
+
+  <img src="/DongTai-Doc/doc/assets/tutorial/python_project_edit_auto.png" style="height:600px; width:800px;" >
+
+#### 4、检测漏洞
+项目创建完成后，即可正常访问应用，触发API检测漏洞；检测到的漏洞可以在**项目详情**页面中看到，也可以在**应用漏洞**页面看到。
+
+  <img src="/DongTai-Doc/doc/assets/tutorial/python_project_vul.png" style="height:600px; width:800px;" >
+
+  <img src="/DongTai-Doc/doc/assets/tutorial/python_project_vul_list.png" style="height:600px; width:800px;" >
