@@ -20,7 +20,7 @@
 
 **洞态IAST**的Hook规则支持设置继承关系，可设置为：仅检测当前类、仅检测子类和检测当前类及子类；同时，agent端会对每一个类做继承关系的深层分析，可梳理出当前类继承的所有父类及接口（父类继承的父类及接口也可以梳理出来，同理，一直梳理至Ojbect类的子类）；然后，在进行hook规则匹配的时候，会根据配置的继承关系查找当前类或其继承的类及接口，判断是否命中hook规则，因此，上述场景中，直接针对`java.io.ObjectInput.readObject()`接口的方法进行hook，设置继承关系为**仅子类**即可。
 
-![interface demo](../../doc/assets/bugbountry/interface_demo.png)
+![interface demo](../assets/bugbountry/interface_demo.png)
 
 
 
