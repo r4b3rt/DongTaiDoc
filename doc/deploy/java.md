@@ -36,7 +36,9 @@
 
 1. 进入`tomcat`所在目录
 
-2. 在 `tomcat/bin` 目录下编辑 `catalina.sh` 文件，加入参数：
+2. 修改配置文件
+
+- Linux环境下，在 `tomcat/bin` 目录下编辑 `catalina.sh` 文件，加入参数：
 
       ```shell
       CATALINA_OPTS=-javaagent:/path/to/server/agent.jar" "-Dproject.name=<project name>
@@ -44,7 +46,13 @@
    
    ![tomact_config_catalina.png](../assets/deploy/manual/tomcat_config_catalina.png)
 
-  - 注意：`-Dproject.name=<project name>` 为可选参数，`<project name>`与创建的项目名称保持一致，agent将自动关联至项目；如果不配置该参数，需要进入项目管理中进行手工绑定。
+- Windows环境下，在 `tomcat/bin` 目录下编辑 `catalina.bat` 文件，**在首行**加入参数：
+
+    ```shell
+    set CATALINA_OPTS=-javaagent:/path/to/server/agent.jar -Dproject.name=<project name>
+    ```
+  
+- 注意：`-Dproject.name=<project name>` 为可选参数，`<project name>`与创建的项目名称保持一致，agent将自动关联至项目；如果不配置该参数，需要进入项目管理中进行手工绑定。
 
 #### 2.2.3 JBoss/Wildfly
 
