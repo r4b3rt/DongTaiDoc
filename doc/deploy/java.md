@@ -61,9 +61,11 @@
     1. 进入JBoss容器的主目录，在`bin/run.sh`文件中找到`# Setup JBoss specific properties`所在行，在该行的下面插入如下行：
 
         ```shell
-        JAVA_OPTS="$JAVA_OPTS -javaagent:/opt/jboss/iast/agent.jar -Dproject.name=<project name>"
+        JAVA_OPTS="-javaagent:/opt/jboss/iast/agent.jar $JAVA_OPTS"
+        JAVA_OPTS="-Dproject.name=<project name> $JAVA_OPTS"
         ```
-  - 注意，`-Dproject.name=<project name>` 为可选参数，`<project name>`与创建的项目名称保持一致，agent将自动关联至项目；如果不配置该参数，需要进入项目管理中进行手工绑定。
+       
+    - 注意，`-Dproject.name=<project name>` 为可选参数，`<project name>`与创建的项目名称保持一致，agent将自动关联至项目；如果不配置该参数，需要进入项目管理中进行手工绑定。
 
 
 - JBossAS 7、JBossWildfly
@@ -75,8 +77,29 @@
         打开`bin/standalone.sh`文件，定位`# Display our environment`所在的行，在其上方插入自定义配置，如下：
 
         ```shell
-        JAVA_OPTS="$JAVA_OPTS -javaagent:/opt/jboss/iast/agent.jar -Dproject.name=<project name>"
+        JAVA_OPTS="$JAVA_OPTS -javaagent:/opt/jboss/iast/agent.jar"
+        JAVA_OPTS="$JAVA_OPTS -Dproject.name=<project name>"
         ```
+       
+        **domain模式**
+        
+        - server-group方式配置
+          ```shell
+            <jvm-options>
+                <option value="-javaagent:<jboss_root>/path/to/agent.jar"/>
+                <option value="-Dproject.name=<project name>"/>
+            </jvm-options>
+            ```
+        - server方式配置
+            ```shell
+            <jvm name="default">
+                <jvm-options>
+                    <option value="-javaagent:<jboss_root>/rasp/rasp.jar"/>
+                    <option value="-Dproject.name=<project name>"/>
+                </jvm-options>
+            </jvm>
+            ```
+
     - 注意，`-Dproject.name=<project name>` 为可选参数，`<project name>`与创建的项目名称保持一致，agent将自动关联至项目；如果不配置该参数，需要进入项目管理中进行手工绑定。
 
 #### 2.2.4 Resin
@@ -90,7 +113,7 @@
 <jvm-arg>-javaagent:/opt/Resin/iast/agent.jar</jvm-arg>
 <jvm-arg>-Dproject.name=<project name></jvm-arg>
 ```
-注意，`-Dproject.name=<project name>` 为可选参数，`<project name>`与创建的项目名称保持一致，agent将自动关联至项目；如果不配置该参数，需要进入项目管理中进行手工绑定。
+- 注意，`-Dproject.name=<project name>` 为可选参数，`<project name>`与创建的项目名称保持一致，agent将自动关联至项目；如果不配置该参数，需要进入项目管理中进行手工绑定。
 
 4.重启Resin
 
