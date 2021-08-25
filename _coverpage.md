@@ -1,4 +1,4 @@
-![logo](./doc/assets/logo/dongtailogo.png)
+![logo](./doc/assets/logo/dongtai.png)
 
 # 洞态IAST <small>v 1.0</small>
 
