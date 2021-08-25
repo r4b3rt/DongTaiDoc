@@ -26,12 +26,12 @@ IAST 分为主动式 IAST 和被动式 IAST。主动式 IAST 通过在被测试�
 
 ### 常用链接
 
-- [快速开始](quickstart.md)
+- [快速开始](/doc/tutorial/quickstart)
 
-- [检测能力](detects.md)
+- [检测能力](/doc/tutorial/detects)
 
-- [架构设计](../deploy/intro.md)
+- [架构设计](/doc/deploy/intro)
 
-- [常见问题](../qa.md)
+- [常见问题](/doc/qa)
 
-- [技术支持](../aboutus/support.md)
+- [技术支持](/doc/aboutus/support)
