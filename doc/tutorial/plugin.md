@@ -28,11 +28,11 @@
   
   Token：登陆 [IAST平台](https://iast.huoxian.cn/login) ，在 **部署IAST** 中获取 Token。
   
-  ![plugin_login](../assets/features/plugin_login.png)
+  ![plugin_login](../assets/features/iast_login.png)
   
-  ![plugin_token_step](../assets/features/plugin_token_step.png)
+  ![plugin_token_step](../assets/features/iast_deploy.png)
   
-  ![plugin_token_success](../assets/features/plugin_token_success.png)
+  ![plugin_token_success](../assets/features/iast_token.png)
 
 <h2 id="2">二、DongTai IAST 插件功能</h3>
 
