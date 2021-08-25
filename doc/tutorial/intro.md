@@ -26,12 +26,12 @@ IAST 分为主动式 IAST 和被动式 IAST。主动式 IAST 通过在被测试�
 
 ### 常用链接
 
-- [快速开始](/doc/tutorial/quickstart)
+- [快速开始](https://hxsecurity.github.io/DongTai-Doc/#/doc/tutorial/quickstart)
 
-- [检测能力](/doc/tutorial/detects)
+- [检测能力](https://hxsecurity.github.io/DongTai-Doc/#/doc/tutorial/detects)
 
-- [架构设计](/doc/deploy/intro)
+- [架构设计](https://hxsecurity.github.io/DongTai-Doc/#/doc/deploy/intro)
 
-- [常见问题](/doc/qa)
+- [常见问题](https://hxsecurity.github.io/DongTai-Doc/#/doc/qa)
 
-- [技术支持](/doc/aboutus/support)
+- [技术支持](https://hxsecurity.github.io/DongTai-Doc/#/doc/aboutus/support)
