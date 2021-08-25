@@ -24,7 +24,7 @@
 1. 拉取代码：`git clone https://github.com/HXSecurity/DongTai-agent-java.git`
 2. 根据需求，修改agent-java中的代码
 3. 编译Agent
-    3.1 登陆**火线--洞态IAST**云端，前往部署页面获取**Token**和云端服务地址
+    3.1 登陆**洞态IAST**云端，前往部署页面获取**Token**和云端服务地址
     3.2 将Token和云端服务地址写入`iast-agent/src/main/resources/iast.properties`文件
     3.3 运行`maven clean package`编译agent
 4. 拷贝检测引擎到临时目录
@@ -117,6 +117,6 @@
 1. 4核8G的服务器
 2. 安装docker 
 
-#### 十五、无法访问洞态 IAST和火线官方网站？
+#### 十五、无法访问洞态IAST官方网站？
 1. 确认网络是否能正常访问其他网站，例如[火线安全平台](www.huoxian.cn)、[百度](www.baidu.com)。
 2. 更换阿里云的 DNS：223.5.5.5 或 223.6.6.6

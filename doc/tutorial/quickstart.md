@@ -1,11 +1,11 @@
-> 灵芝IAST升级为”火线～洞态IAST“，同时，提供独立的SaaS版本，支持第三方组件管理、通用漏洞检测、越权漏洞检测、组件级漏洞挖掘
+> 快速体验
 
 ## 登录IAST平台
 
 ### 1.注册
 
 - 填写 [调查问卷](https://jinshuju.net/f/I9PNmf) 进行注册
-  ![register_questionnaire.png](../assets/tutorial/register_questionnaire.png)  
+  ![register_questionnaire.png](../assets/tutorial/register_question.png)  
 
   **注意**：账号统一在每天上午10点创建
 
@@ -15,13 +15,13 @@
 
 - 火线-洞态IAST地址：[iast.huoxian.cn](https://iast.huoxian.cn)
 
-  ![login_iast.png](../assets/tutorial/login_iast.png)
+  ![login_iast.png](../assets/features/iast_login.png)
 
 ### 3.修改密码
 
 - 登录 [IAST平台](https://iast.huoxian.cn/login) 后，点击系统配置，在左边栏中选择密码修改，即可修改密码
 
-  ![password_changes.png](../assets/tutorial/password_changes.png)
+  ![password_changes.png](../assets/tutorial/fix_password.png)
 
 ## Java版本快速体验
 
@@ -32,17 +32,14 @@
 #### 1.在线靶场配置 IAST token
 
 - 登陆[IAST平台](https://iast.huoxian.cn/login)
-- 访问“部署IAST”功能
+- 访问[部署IAST](https://iast.huoxian.cn/deploy)
 - 选择目标应用使用的**开发语言**(Java)
-- 选择对应的操作系统和版本（JDK 1.8及以下选择1.8，JDK 1.8以上选择1.9）
 - 复制 TOKEN
 
-  ![find_tokenn.png](../assets/tutorial/find_tokenn.png)
+  ![find_tokenn.png](../assets/features/iast_token.png)
 
 - 登陆[靶场](https://labs.iast.huoxian.cn) ，靶场账号与 IAST 账号相同
 - 点击系统设置，进入token配置页面，粘贴之前复制的token后，点击修改即可保存
-  
-  ![find_tokenn.png](../assets/tutorial/find_tokenn.png)  
 
   ![config_token_setting](../assets/tutorial/config_token_setting.png)
 
@@ -70,24 +67,19 @@
   
 - 新建项目，填写基本设置后保存
 
-  ![project_edit.png](../assets/tutorial/project_edit.png)
+  ![project_edit.png](../assets/tutorial/iast_new_application.png)
 
 #### 4、检测漏洞
 项目创建完成后，即可正常访问应用，触发API检测漏洞；检测到的漏洞可以在**项目详情**页面中看到，也可以在**应用漏洞**页面看到。
 
-  ![project_detail.png](../assets/tutorial/project_detail.png)
-
-  ![project_detail_list.png](../assets/tutorial/project_detail_list.png)
+  ![project_detail.png](../assets/tutorial/iast_application_detail.png)
 
 ### 本地应用 - 安装IAST
 #### 1、下载Agent
 - 登陆[IAST平台](https://iast.huoxian.cn/login)
 - 访问“部署IAST”功能
 - 选择目标应用使用的**开发语言**(Java)
-- 选择对应的操作系统和版本（JDK 1.8及以下选择1.8，JDK 1.8以上选择1.9）
 - 进入下载、配置页面，根据步骤完成下载和配置
-
-  ![download_agent.gif](../assets/tutorial/download_agent.gif)
 
 #### 2、配置agent并启动应用（以SpringBoot为例）
 SpringBoot默认打为`jar`包，通过`java -jar app.jar`的方式启动；在这类SpringBoot上安装agent时，只需要在启动命令上增加一个参数即可：
@@ -108,14 +100,13 @@ SpringBoot默认打为`jar`包，通过`java -jar app.jar`的方式启动；在�
 
   ![project_new_auto.png](../assets/tutorial/project_new_auto.png)
 
-  ![project_edit_auto.png](../assets/tutorial/project_edit_auto.png)
+  ![project_edit_auto.png](../assets/tutorial/iast_new_application.png)
 
 #### 4、检测漏洞
 项目创建完成后，即可正常访问应用，触发API检测漏洞；检测到的漏洞可以在**项目详情**页面中看到，也可以在**应用漏洞**页面看到。
 
-  ![project_vul.png](../assets/tutorial/project_vul.png)
+  ![project_vul.png](../assets/tutorial/iast_application_detail.png)
 
-  ![project_vul_list.png](../assets/tutorial/project_vul_list.png)
 
 ## Python版本快速体验
 
