@@ -5,6 +5,7 @@
 ### 1.注册
 
 - 填写 [调查问卷](https://jinshuju.net/f/I9PNmf) 进行注册
+
   ![register_questionnaire.png](../assets/tutorial/register_question.png)  
 
   **注意**：账号统一在每天上午10点创建
