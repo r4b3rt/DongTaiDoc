@@ -28,7 +28,7 @@
   - [Java Agent Release Note](doc/changes/JavaAgent.md)
   - [Python Agent Release Note](doc/changes/PythonAgent.md)
 
-- [帮助中心]
+- 帮助中心
   - [社区提问](doc/qa.md)
 
 - [技术支持](doc/aboutus/support.md)
