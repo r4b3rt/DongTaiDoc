@@ -15,7 +15,8 @@
   - [单机部署](doc/deploy/docker-compose.md)
   - [集群部署](doc/deploy/Kubernetes.md)
 
-- [最佳实践](doc/practices.md)
+- 最佳实践
+  - [最佳实践](doc/practices.md)
 
 - 漏洞挖掘
   - [入门](doc/bugbountry/quickstart.md)
@@ -27,7 +28,7 @@
   - [Java Agent Release Note](doc/changes/JavaAgent.md)
   - [Python Agent Release Note](doc/changes/PythonAgent.md)
 
-- [Q&A]
-  - [QA](doc/qa.md)
+- [帮助中心]
+  - [社区提问](doc/qa.md)
 
 - [技术支持](doc/aboutus/support.md)
