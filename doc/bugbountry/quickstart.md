@@ -16,7 +16,7 @@
 现在，师傅们只需要专注于代码审计，轻松挖掘漏洞。
 
 ### 漏洞搜索
-**洞态IAST**搜索功能：[https://iast.huoxian.cn/taint/search](https://iast.huoxian.cn/taint/search)
+**洞态IAST**搜索功能：[https://iast.io/taint/search](https://iast.io/taint/search)
 
 ![search](../assets/bugbountry/search.png)
 

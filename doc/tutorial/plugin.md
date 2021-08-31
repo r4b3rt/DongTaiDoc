@@ -26,7 +26,7 @@
   
   agentUrl / url：自动填写洞态IAST地址，若有需求可自更改
   
-  Token：登陆 [IAST平台](https://iast.huoxian.cn/login) ，在 **部署IAST** 中获取 Token。
+  Token：登陆 [IAST平台](https://iast.io/login) ，在 **部署IAST** 中获取 Token。
   
   ![plugin_login](../assets/features/iast_login.png)
   
@@ -62,7 +62,7 @@
 
 ####  (3) 查看已添加的 HOOK 规则
   
- - 登陆 [IAST平台](https://iast.huoxian.cn/login) ，选择系统配置中的自定义规则。 
+ - 登陆 [IAST平台](https://iast.io/login) ，选择系统配置中的自定义规则。 
 
   ![plugin_hook_result](../assets/features/plugin_hook_result.png)
 

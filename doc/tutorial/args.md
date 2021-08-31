@@ -142,7 +142,7 @@
 | 参数类型 | 字符串                              |
 |   来源   | 配置文件                            |
 | 可选参数 |                                     |
-|  默认值  | http://openapi.iast.huoxian.cn:8000 |
+|  默认值  | https://openapi.iast.io |
 | 参数说明 | <div style="width: 300pt">server url                          |
 
 ### iast.allhook.enable
@@ -184,7 +184,7 @@ java -javaagent:/path/to/agent.jar -Diast.engine.delay.time=15 -jar SpringDemo.j
 java -javaagent:/path/to/agent.jar -Diast.dump.class.enable=true -Diast.dump.class.path=/tmp/class -jar SpringDemo.jar
 ```
 
-### 5. 当前网络无法访问[洞态云端](https://iast.huoxian.cn)需要设置HTTP代理，以设置代理 10.100.100.1:80 为例：
+### 5. 当前网络无法访问[洞态云端](https://iast.io)需要设置HTTP代理，以设置代理 10.100.100.1:80 为例：
 
 ```
 java -javaagent:/path/to/agent.jar -Diast.proxy.enable=true -Diast.proxy.host=10.100.100.1 -Diast.proxy.host=80 -jar SpringDemo.jar

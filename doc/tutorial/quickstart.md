@@ -14,13 +14,13 @@
 
 ### 2.登录
 
-- 火线-洞态IAST地址：[iast.huoxian.cn](https://iast.huoxian.cn)
+- 火线-洞态IAST地址：[iast.io](https://iast.io)
 
   ![login_iast.png](../assets/features/iast_login.png)
 
 ### 3.修改密码
 
-- 登录 [IAST平台](https://iast.huoxian.cn/login) 后，点击系统配置，在左边栏中选择密码修改，即可修改密码
+- 登录 [IAST平台](https://iast.io/login) 后，点击系统配置，在左边栏中选择密码修改，即可修改密码
 
   ![password_changes.png](../assets/tutorial/fix_password.png)
 
@@ -32,14 +32,14 @@
 
 #### 1.在线靶场配置 IAST token
 
-- 登陆[IAST平台](https://iast.huoxian.cn/login)
-- 访问[部署IAST](https://iast.huoxian.cn/deploy)
+- 登陆[IAST平台](https://iast.io/login)
+- 访问[部署IAST](https://iast.io/deploy)
 - 选择目标应用使用的**开发语言**(Java)
 - 复制 TOKEN
 
   ![find_tokenn.png](../assets/features/iast_token.png)
 
-- 登陆[靶场](https://labs.iast.huoxian.cn) ，靶场账号与 IAST 账号相同
+- 登陆[靶场](https://labs.dongtai.io/#/) ，靶场账号与 IAST 账号相同
 - 点击系统设置，进入token配置页面，粘贴之前复制的token后，点击修改即可保存
 
   ![config_token_setting](../assets/tutorial/config_token_setting.png)
@@ -56,7 +56,7 @@
 
   ![visit_route.png](../assets/tutorial/visit_route.png)
 
-- 项目启动成功后进入[IAST平台](https://iast.huoxian.cn/login) ，可以在系统配置内引擎管理页面看到刚上线的应用
+- 项目启动成功后进入[IAST平台](https://iast.io/login) ，可以在系统配置内引擎管理页面看到刚上线的应用
   
   ![agentManage.png](../assets/tutorial/agentManage.png)
   
@@ -77,7 +77,7 @@
 
 ### 本地应用 - 安装IAST
 #### 1、下载Agent
-- 登陆[IAST平台](https://iast.huoxian.cn/login)
+- 登陆[IAST平台](https://iast.io/login)
 - 访问“部署IAST”功能
 - 选择目标应用使用的**开发语言**(Java)
 - 进入下载、配置页面，根据步骤完成下载和配置
@@ -118,7 +118,7 @@ SpringBoot默认打为`jar`包，通过`java -jar app.jar`的方式启动；在�
 
 ### 本地应用 - 安装IAST
 #### 1、下载Agent
-- 登陆[IAST平台](https://iast.huoxian.cn/login)
+- 登陆[IAST平台](https://iast.io/login)
 - 访问“部署IAST”功能
 - 选择目标应用使用的**开发语言**(Python)
 - 进入下载、配置页面，根据步骤完成下载和配置
