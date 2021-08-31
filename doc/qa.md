@@ -71,7 +71,7 @@
 
 #### 四、如何获取 token ？
 
-  1. 登陆洞态IAST官网，官网地址：https://iast.huoxian.cn/
+  1. 登陆洞态IAST官网，官网地址：https://iast.io/
   
   2. 点击右上角的“部署IAST”，点击“下一步”直到第三步
   

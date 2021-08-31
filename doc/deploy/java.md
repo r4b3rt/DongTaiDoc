@@ -1,6 +1,6 @@
 ## 1.下载探针
 
-  1. 登陆 [洞态IAST平台](https://iast.huoxian.cn/login) 在 [**部署IAST**](https://iast.huoxian.cn/deploy) 中下载洞态IAST的Agent。根据需求选择下载方式：
+  1. 登陆 [洞态IAST平台](https://iast.io/login) 在 [**部署IAST**](https://iast.io/deploy) 中下载洞态IAST的Agent。根据需求选择下载方式：
     
   - 点击下载 jar 包到本地
 
@@ -190,4 +190,4 @@
 
 2. 检查网络情况
 
-      在 Web 应用服务器中，检查是否可访问 http://openapi.iast.huoxian.cn:8000 服务，如果不可访问，说明网络不通，请解决网络访问的问题；如果网络不存在问题，请前往 github 给工程师提交 issue，我们会及时给您回复。
+      在 Web 应用服务器中，检查是否可访问 https://openapi.iast.io 服务，如果不可访问，说明网络不通，请解决网络访问的问题；如果网络不存在问题，请前往 github 给工程师提交 issue，我们会及时给您回复。
