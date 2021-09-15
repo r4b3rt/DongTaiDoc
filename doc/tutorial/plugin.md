@@ -8,9 +8,9 @@
 
 - 打开 IDEA 设置，选择从本地安装 IDEA 插件，安装DongTai IAST插件安装包**dongtai-idea-plugin.zip**
   
-  ![plugin_download](/DongTai-Doc/doc/assets/features/plugin_download.png)
+  ![plugin_download](../assets/features/plugin_download.png)
 
-  ![plugin_download_disk](/DongTai-Doc/doc/assets/features/plugin_download_disk.png)
+  ![plugin_download_disk](../assets/features/plugin_download_disk.png)
   
   ![plugin_install](../assets/features/plugin_installs.png)
 
@@ -26,13 +26,13 @@
   
   agentUrl / url：自动填写洞态IAST地址，若有需求可自更改
   
-  Token：登陆 [IAST平台](https://iast.huoxian.cn/login) ，在 **部署IAST** 中获取 Token。
+  Token：登陆 [IAST平台](https://iast.io/login) ，在 **部署IAST** 中获取 Token。
   
-  ![plugin_login](/DongTai-Doc/doc/assets/features/plugin_login.png)
+  ![plugin_login](../assets/features/iast_login.png)
   
-  ![plugin_token_step](/DongTai-Doc/doc/assets/features/plugin_token_step.png)
+  ![plugin_token_step](../assets/features/iast_deploy.png)
   
-  ![plugin_token_success](/DongTai-Doc/doc/assets/features/plugin_token_success.png)
+  ![plugin_token_success](../assets/features/iast_token.png)
 
 <h2 id="2">二、DongTai IAST 插件功能</h3>
 
@@ -44,27 +44,27 @@
 
 - 选择规则集、规则类型、规则详情、污点来源、污点去向以及继承深度
     
-    ![plugin_hook_action](/DongTai-Doc/doc/assets/features/plugin_hook_action.png)
+    ![plugin_hook_action](../assets/features/plugin_hook_action.png)
     
-    ![plugin_hook_config](/DongTai-Doc/doc/assets/features/plugin_hook_config.png)
+    ![plugin_hook_config](../assets/features/plugin_hook_config.png)
     
-    ![plugin_hook_commit](/DongTai-Doc/doc/assets/features/plugin_hook_commit.png)
+    ![plugin_hook_commit](../assets/features/plugin_hook_commit.png)
 
 ####  (2) "添加 HOOK 规则"完成后的不同结果返回
 
 - 若完成添加，Event Log 会提示请求发送成功。
   
-  ![plugin_hook_success](/DongTai-Doc/doc/assets/features/plugin_hook_success.png)
+  ![plugin_hook_success](../assets/features/plugin_hook_success.png)
   
 - 若填写 Token 错误时，该弹框会退出并弹出提示。
   
-  ![plugin_hook_failure](/DongTai-Doc/doc/assets/features/plugin_hook_failure.png)
+  ![plugin_hook_failure](../assets/features/plugin_hook_failure.png)
 
 ####  (3) 查看已添加的 HOOK 规则
   
- - 登陆 [IAST平台](https://iast.huoxian.cn/login) ，选择系统配置中的自定义规则。 
+ - 登陆 [IAST平台](https://iast.io/login) ，选择系统配置中的自定义规则。 
 
-  ![plugin_hook_result](/DongTai-Doc/doc/assets/features/plugin_hook_result.png)
+  ![plugin_hook_result](../assets/features/plugin_hook_result.png)
 
 [comment]: <> (<h4 id="2">二、一键配置本地agent</h3>)
 ### 2、Run / Debug With IAST
@@ -77,14 +77,15 @@
 
 - 以某开源项目为例，使用Run / Debug with IAST启动项目
 
-  ![plugin_agent_run](/DongTai-Doc/doc/assets/features/plugin_run_debug_app.png)
+  ![plugin_agent_run](../assets/features/plugin_run_debug_app.png)
   
 - 通过控制台打印的日志可知 agent 已添加
   
-  ![plugin_agent_running](/DongTai-Doc/doc/assets/features/plugin_agent_add.png)
+  ![plugin_agent_running](../assets/features/plugin_agent_add.png)
 
 ### 3、实时查看应用漏洞
 
 - 在插件中实时查看漏洞信息
 
-  ![plugin_taint_details](/DongTai-Doc/doc/assets/features/plugin_taint_details.png)
+  ![plugin_taint_details](../assets/features/plugin_taint_details.png)
+

@@ -1,8 +1,8 @@
-![logo](https://www.huoxian.cn/static/img/logo.2fbf251b.png)
+![logo](./doc/assets/logo/dongtai.png)
 
 # 洞态IAST <small>v 1.0</small>
 
-> 一款专为安全人员、代码审计工程师和0 Day漏洞挖掘人员量身打造的辅助工具，可集成devops环境进行漏洞检测、作为代码审计的辅助工具和自动化挖掘0 Day。
+> 洞态专注于 DevSecOps，帮助企业发现并解决应用安全风险。洞态 IAST 是全球首家开源的 IAST，支持 SaaS 访问及本地部署，助力企业在上线前解决应用的安全风险。
 
 [GitHub](https://github.com/HXSecurity/DongTai)
 [Document](doc/tutorial/intro.md)
