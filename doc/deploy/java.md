@@ -51,6 +51,50 @@
     ```shell
     set CATALINA_OPTS=-javaagent:/path/to/server/agent.jar -Dproject.name=<project name>
     ```
+  若无法使用修改 catalina.bat 的方式，请参考以下方式配置：
+  
+  - 如果是下载的 "32-bit/64-bit Windows Service Installer" 安装包
+    
+    打开 `bin/tomcatXw.exe` ，切换到 `Java` 标签页。在 `Java Options` 下面增加启动参数，**注意替换下绝对路径**，e.g
+    
+    ```
+    -javaagent:path\to\agent.jar
+    ```
+    
+    对于JDK9以上版本，还需要额外增加如下内容
+    
+    ```
+    --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED
+    --add-opens=java.base/java.net=ALL-UNNAMED
+    ```
+    
+  - 如果是下载的 "Windows zip" 安装包
+    
+    打开 `bin\catalina.bat`, 找到 `:setArgs` 处：
+
+    ```bat
+    :setArgs
+    if ""%1""=="""" goto doneSetArgs
+    set CMD_LINE_ARGS=%CMD_LINE_ARGS% %1
+    ```
+
+    在 `:setArgs` 下增加新的 JAVA_OPTS，e.g
+
+    ```bat
+    :setArgs
+    if "%ACTION%" == "start" set JAVA_OPTS=-javaagent:%CATALINA_HOME%\path\to\agent.jar %JAVA_OPTS%
+    if ""%1""=="""" goto doneSetArgs
+    set CMD_LINE_ARGS=%CMD_LINE_ARGS% %1
+    ```
+
+    对于JDK9以上版本，还需要额外增加两个JDK启动参数，e.g
+    
+    ```
+    :setArgs
+    if "%ACTION%" == "start" set JAVA_OPTS=-javaagent:%CATALINA_HOME%\path\to\agent.jar --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED %JAVA_OPTS%
+    if ""%1""=="""" goto doneSetArgs
+    set CMD_LINE_ARGS=%CMD_LINE_ARGS% %1
+    ```
   
 - 注意：`-Dproject.name=<project name>` 为可选参数，`<project name>`与创建的项目名称保持一致，agent将自动关联至项目；如果不配置该参数，需要进入项目管理中进行手工绑定。
 
