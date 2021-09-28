@@ -55,6 +55,8 @@
   
   - 如果是下载的 "32-bit/64-bit Windows Service Installer" 安装包
     
+    ![tomact_config_catalina.png](../assets/deploy/deploy_windows_tomcat.png)
+    
     打开 `bin/tomcatXw.exe` ，切换到 `Java` 标签页。在 `Java Options` 下面增加启动参数，**注意替换下绝对路径**，e.g
     
     ```
