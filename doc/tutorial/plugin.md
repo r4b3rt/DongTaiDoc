@@ -4,6 +4,16 @@
 
 ###  1、IDEA 安装 DongTai IAST
 
+#### 在线安装
+
+- 打开 IDEA 设置界面，点击 MarketPlace，搜索 DongTai IAST
+
+  ![plugin_download](../assets/tutorial/plugins_marketPlace.png)
+
+- 点击 Install 开始下载。下载结束后，查看已安装的插件，检查 DongTai IAST 插件是否安装并启用成功。
+
+#### 离线安装
+
 - 下载 DongTai IAST 插件安装包，[下载地址](https://github.com/HXSecurity/DongTai-Plugin-IDEA/releases/download/v1.0/DongTai-Plugin-IDEA.zip)
 
 - 打开 IDEA 设置，选择从本地安装 IDEA 插件，安装DongTai IAST插件安装包**dongtai-idea-plugin.zip**
@@ -14,7 +24,7 @@
   
   ![plugin_install](../assets/features/plugin_installs.png)
 
-- 重启 IDEA ，查看已安装的插件，检查 DongTai IAST 插件是否安装并启用成功
+- 查看已安装的插件，检查 DongTai IAST 插件是否安装并启用成功
 
 ###  2、配置"DongTai IAST 配置云端"
 
