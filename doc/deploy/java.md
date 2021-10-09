@@ -165,16 +165,15 @@
 
 #### 2.2.5 Jetty
 
-1.进入jetty的主目录
+1. 进入jetty的主目录
 
-2.打开`bin/jetty.sh`文件，找到`Add jetty properties to Java VM options.`所在行
+2. 修改 java 启动参数，增加 -javaagent 参数（注意将 `-jar` 放在命令最末尾):
 
-3.在改行的下面插入`JAVA_OPTIONS+=( "-javaagent:/path/to/agent.jar --Dproject.name=<project name>")`
+```
+java -javaagent:/path/to/agent.jar -Dproject.name=<project name> -jar start.jar
+```
 
-- 注意，`-Dproject.name=<project name>` 为可选参数，`<project name>`与创建的项目名称保持一致，agent将自动关联至项目；如果不配置该参数，需要进入项目管理中进行手工绑定。
-
-4.重启jetty服务器
-
+**注意：**`<project name>`与创建的项目名称保持一致，agent将自动关联至项目；如果不配置该参数，需要进入项目管理中进行手工绑定。
 
 #### 2.2.6 WebLogic
 
